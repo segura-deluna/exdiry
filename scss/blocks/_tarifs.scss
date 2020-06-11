@@ -1,0 +1,113 @@
+.tarifs {
+	width: 100%;
+	height: 100vh;
+	padding-top: 72px;
+	background-image: url("../img/tarifs_bg.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	&__title {
+		position: relative;
+		width: 460px;
+		font-size: 25px;
+		font-weight: 700;
+		letter-spacing: 0.04em;
+		color: #ffffff;
+		margin: 0 auto 35px;
+		&::before,
+		&::after {
+			position: absolute;
+			content: "";
+			display: inline-block;
+			width: 68px;
+			height: 1px;
+			top: 60%;
+			background: #c236a8;
+		}
+		&::before {
+			left: -90px;
+		}
+		&::after {
+			right: -90px;
+		}
+	}
+
+	&__cards {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 30px;
+	}
+
+	&__cards-item {
+		width: 290px;
+		height: 540px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0 15px;
+	}
+
+	&__cards-round {
+		width: 205px;
+		height: 205px;
+		margin: 0 auto 25px;
+		& img {
+			display: block;
+			width: 100%;
+		}
+	}
+
+	&__cards-range {
+		width: 100%;
+	}
+
+	&__cards-warning {
+		& p {
+			position: relative;
+			font-size: 14px;
+			line-height: 1.2;
+			color: #959fff;
+			&::before {
+				position: absolute;
+				display: block;
+				content: "";
+				width: 7px;
+				height: 20px;
+				top: 6px;
+				left: -16px;
+				background-image: url("../img/danger.png");
+			}
+		}
+	}
+}
+
+.cards-range__list-title {
+	position: relative;
+	color: #ffffff;
+
+	&::before {
+		position: absolute;
+		content: "";
+		display: inline-block;
+		width: 10px;
+		height: 12px;
+		top: 7px;
+		left: -18px;
+		background-image: url("../img/plus.svg");
+	}
+}
+
+.cards-range__list-rate {
+	display: flex;
+	justify-content: center;
+	margin: 5px 0;
+}
+.list-rate {
+	display: block;
+	width: 17px;
+	height: 6px;
+	background-color: #ffffff;
+	margin: 0 3px;
+}

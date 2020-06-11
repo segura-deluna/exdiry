@@ -1,0 +1,90 @@
+.bottom-text {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 1280px;
+	height: 35px;
+
+	&__descr {
+		display: flex;
+		justify-content: space-between;
+		width: 700px;
+	}
+
+	&__descr-item {
+		display: flex;
+	}
+
+	&__descr-img {
+		width: 27px;
+		height: 27px;
+		margin-right: 5px;
+	}
+
+	&__descr-name {
+		position: relative;
+		color: #ffffff;
+		font-size: 18px;
+	}
+
+	&__descr--market {
+		&::after {
+			position: absolute;
+			display: inline-block;
+			content: "";
+			width: 140px;
+			height: 1px;
+			background: linear-gradient(to right, #b71dff, #ff1a35);
+			left: 0;
+			top: 28px;
+			z-index: 3;
+		}
+	}
+
+	&__descr--profi {
+		&::after {
+			position: absolute;
+			display: inline-block;
+			content: "";
+			width: 175px;
+			height: 1px;
+			background: linear-gradient(to right, #b71dff, #ff1a35);
+			left: 0;
+			top: 28px;
+			z-index: 3;
+		}
+	}
+
+	&__descr--garant {
+		&::after {
+			position: absolute;
+			display: inline-block;
+			content: "";
+			width: 130px;
+			height: 1px;
+			background: linear-gradient(to right, #b71dff, #ff1a35);
+			left: 0;
+			top: 28px;
+			z-index: 3;
+		}
+	}
+
+	&__mail {
+		display: flex;
+		width: 430px;
+	}
+
+	&__mail-img {
+		width: 30px;
+		height: 30px;
+	}
+
+	&__mail-item {
+		display: flex;
+	}
+
+	&__mail-name {
+		color: #ffffff;
+		margin-left: 10px;
+	}
+}

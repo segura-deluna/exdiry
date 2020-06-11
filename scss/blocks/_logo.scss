@@ -1,0 +1,35 @@
+.logo {
+	width: 163px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&__text {
+		position: relative;
+		font-family: "Lato-B", sans-serif;
+		font-size: 24px;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: #ffffff;
+		border-right: 1px solid #ffffff;
+		padding: 0px 5px;
+		margin-right: 10px;
+	}
+
+	&__img {
+		width: 32px;
+		height: 30px;
+	}
+}
+
+.io {
+	width: 26px;
+	height: 24px;
+	background-color: #ffffff;
+	font-family: "Lato-B", sans-serif;
+	font-size: 24px;
+	color: #000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

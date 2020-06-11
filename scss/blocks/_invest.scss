@@ -1,0 +1,60 @@
+.invest {
+	width: 100%;
+	height: 900px;
+
+	&__main {
+		position: relative;
+	}
+
+	&__descr {
+		color: #ffffff;
+		margin: 170px 0 40px;
+	}
+
+	&__suptitle {
+		font-weight: 500;
+		font-size: 16px;
+		letter-spacing: 0.12em;
+		margin-bottom: 20px;
+	}
+
+	&__title {
+		width: 700px;
+		font-weight: bold;
+		font-size: 50px;
+		letter-spacing: 0.005em;
+		margin-bottom: 26px;
+	}
+
+	&__text {
+		width: 525px;
+
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 126.5%;
+	}
+
+	&__buttons {
+		display: flex;
+		margin-bottom: 130px;
+	}
+}
+
+.social__img {
+	&-tlg {
+		position: absolute;
+		top: -55px;
+		right: 3px;
+		width: 31px;
+		height: 31px;
+		fill: #fff;
+	}
+	&-vk {
+		position: absolute;
+		top: -100px;
+		right: 3px;
+		width: 31px;
+		height: 31px;
+		fill: #fff;
+	}
+}

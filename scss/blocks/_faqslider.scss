@@ -1,0 +1,149 @@
+.faq__slider {
+	position: relative;
+	margin-bottom: 20px;
+	& h2 {
+		width: 200px;
+		color: #ffffff;
+		font-size: 30px;
+		margin: 0 auto;
+	}
+}
+
+.faq__slider-container {
+	height: 380px;
+	width: 970px;
+	padding: 10px 0px;
+}
+
+.faq__item {
+	width: 700px;
+	height: 360px;
+	display: flex;
+	justify-content: space-between;
+	padding: 5px;
+}
+
+.faq__card {
+	width: 440px;
+	height: 345px;
+	font-size: 20px;
+	font-weight: 700;
+	color: $dark;
+	text-align: center;
+	box-shadow: 0px 0px 10px rgba(80, 80, 80, 0.45);
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.faq__card-img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 230px;
+}
+
+.card-img1 {
+	background: linear-gradient(130.81deg, #7572fe 5.63%, #d100d6 77.53%);
+}
+
+.card-img2 {
+	background: linear-gradient(131.14deg, #ff77fa 5.07%, #c51e1e 78.13%);
+}
+
+.card-img3 {
+	background: linear-gradient(127.68deg, #36fcfc 7.16%, #22b828 87.41%);
+}
+
+.card-img4 {
+	background: linear-gradient(135.65deg, #faa500 17.03%, #bbbf02 76.67%);
+}
+
+.card-img5 {
+	background: linear-gradient(130.81deg, #fa9a9a 5.63%, #d1154d 77.53%);
+}
+
+.card-img6 {
+	background: linear-gradient(124.66deg, #56ffd6 0%, #e921ed 88.21%);
+}
+
+.card-img7 {
+	background: linear-gradient(127.8deg, #de95a7 0%, #f7d523 0.01%, #d11111 78.07%);
+}
+
+.card-img8 {
+	background: linear-gradient(130.81deg, #9584ff 5.63%, #0fbfe6 77.53%);
+}
+
+.faq__card-text {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 115px;
+	background-color: #ffffff;
+	padding: 0px 40px;
+}
+
+.faq__descr {
+	width: 100%;
+	max-width: 470px;
+	& p {
+		color: #ffffff;
+		padding-left: 20px;
+		border-left: 2px solid #ffffff;
+	}
+}
+
+// * Slider navigation ===============
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+	display: none;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+	width: 35px;
+	height: 57px;
+	top: 60%;
+}
+
+.swiper-button-prev {
+	background: url("../img/prev.svg");
+}
+.swiper-button-next {
+	background: url("../img/next.svg");
+}
+
+// * Slider pagination =================
+
+.swiper-pagination {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 15px;
+	& span {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.swiper-pagination-bullet {
+	width: 90px;
+	height: 90px;
+	text-align: center;
+	line-height: 20px;
+	font-size: 18px;
+	color: #ffffff;
+	opacity: 1;
+	background: url("../img/circle.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.swiper-pagination-bullet-active {
+	width: 120px;
+	height: 120px;
+}

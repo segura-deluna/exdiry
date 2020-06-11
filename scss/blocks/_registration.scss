@@ -1,0 +1,134 @@
+.registration {
+	display: flex;
+	&__bg {
+		width: 100%;
+		max-width: 710px;
+		height: 100vh;
+		background-image: url("../img/room_bg.jpg");
+		background-repeat: no-repeat;
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		padding: 100px;
+	}
+}
+
+.registration-form {
+	padding: 110px 0 0 105px;
+
+	&__wrap {
+		display: flex;
+		flex-direction: column;
+		width: 540px;
+	}
+
+	&__title {
+		font-size: 38px;
+		font-weight: 700;
+		margin-bottom: 45px;
+	}
+
+	&__data {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	&__input {
+		width: 100%;
+		height: 38px;
+		margin-bottom: 50px;
+		padding-left: 18px;
+		color: $dark;
+		font-size: 18px;
+		font-weight: 500;
+		background: transparent;
+		border: none;
+		border-bottom: 1px solid rgba(137, 132, 132, 0.51);
+		&::placeholder {
+			font-size: 16px;
+			color: rgba(146, 146, 146, 0.6);
+		}
+		&:nth-child(5) {
+			margin-bottom: 25px;
+		}
+	}
+
+	&__terms {
+		display: flex;
+		align-items: center;
+		color: $gray;
+		margin: 0 auto 25px;
+		&-link {
+			color: $gray;
+			text-decoration: underline;
+			transition: 0.3s ease;
+			&:hover {
+				color: $dark;
+			}
+		}
+	}
+
+	.check-input {
+		background: #ffffff;
+	}
+
+	&__btn-reg {
+		width: 540px;
+		height: 60px;
+		font-size: 18px;
+		color: #ffffff;
+		outline: transparent;
+		border: transparent;
+		background: linear-gradient(146.94deg, #4ba5bb 9.08%, #302e9f 93.38%);
+		border-radius: 50px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 30px;
+		cursor: pointer;
+		transition: 0.3s ease;
+
+		& svg {
+			width: 24px;
+			height: 27px;
+			fill: #ffffff;
+			margin-right: 10px;
+			transition: 0.3s ease;
+		}
+
+		&:hover {
+			color: $blue;
+			& svg {
+				fill: $blue;
+			}
+		}
+	}
+
+	&__help {
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	&__help-acc {
+		color: $gray;
+		margin-bottom: 10px;
+		& a {
+			color: $gray;
+			transition: 0.3s ease;
+			&:hover {
+				color: $dark;
+			}
+		}
+	}
+
+	&__help-home {
+		& a {
+			color: $dark;
+			transition: 0.3s ease;
+			&:hover {
+				color: $gray;
+			}
+		}
+	}
+}

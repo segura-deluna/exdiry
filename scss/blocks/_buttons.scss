@@ -1,0 +1,116 @@
+.button-entry {
+	font-family: "Noto-M", sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1;
+	color: #ffffff;
+	background: linear-gradient(180.12deg, #d03ba6 0.47%, #831fb1 99.53%);
+	border-radius: 50px;
+	border: none;
+	box-shadow: 0px 0px 10px rgba(253, 175, 255, 0.35);
+	padding: 8px 25px 13px 25px;
+	display: flex;
+	align-items: center;
+	transition: box-shadow 0.3s ease;
+	cursor: pointer;
+	&:hover {
+		box-shadow: 0px 0px 10px rgba(253, 175, 255, 0.75);
+	}
+	&__img {
+		width: 24px;
+		height: 27px;
+		fill: #fff;
+		margin-right: 10px;
+	}
+}
+
+.button-work {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: 500;
+	width: 260px;
+	height: 60px;
+	background: linear-gradient(180deg, #3bd1d1 0%, #46129a 100%),
+		linear-gradient(180deg, #ffffff 0%, rgba(22, 2, 2, 0) 100%);
+	box-shadow: 0px 0px 10px rgba(141, 141, 141, 0.93);
+	border-radius: 50px;
+	cursor: pointer;
+	margin-right: 40px;
+	transition: 0.3s ease;
+	&:hover {
+		color: $blue;
+		box-shadow: 0px 0px 20px rgba(141, 141, 141, 0.93);
+	}
+}
+
+.button-calc {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #ffffff;
+	color: $blue-icon;
+	font-size: 16px;
+	font-weight: 500;
+	width: 260px;
+	height: 60px;
+	box-shadow: 0px 0px 10px rgba(146, 146, 146, 0.35);
+	border-radius: 50px;
+	cursor: pointer;
+	margin-right: 40px;
+}
+
+.button-privat {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #ffffff;
+	color: $blue-icon;
+	font-size: 16px;
+	font-weight: 500;
+	width: 260px;
+	height: 60px;
+	box-shadow: 0px 0px 10px rgba(146, 146, 146, 0.35);
+	border-radius: 50px;
+	cursor: pointer;
+}
+
+.tarifs__cards-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 180px;
+	height: 44px;
+	color: #ffffff;
+	background: linear-gradient(180deg, #3bd1d1 0%, #46129a 100%),
+		linear-gradient(180deg, #ffffff 0%, rgba(22, 2, 2, 0) 100%);
+	box-shadow: 0px 0px 10px rgba(146, 146, 146, 0.35);
+	border-radius: 50px;
+	cursor: pointer;
+	transition: color 0.3s ease, box-shadow 0.3s ease;
+	&:hover {
+		color: $blue;
+		box-shadow: 0px 0px 15px rgba(146, 146, 146, 0.75);
+	}
+}
+
+.news__card-btn {
+	width: 190px;
+	height: 44px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #ffffff;
+	cursor: pointer;
+	background: linear-gradient(180deg, #3bd1d1 0%, #46129a 100%),
+		linear-gradient(180deg, #ffffff 0%, rgba(22, 2, 2, 0) 100%);
+	box-shadow: 0px 0px 10px rgba(146, 146, 146, 0.35);
+	border-radius: 50px;
+	transition: 0.3s ease;
+	&:hover {
+		color: $blue;
+		box-shadow: 0px 0px 10px rgba(146, 146, 146, 0.75);
+	}
+}
