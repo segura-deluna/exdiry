@@ -156,6 +156,7 @@
 		letter-spacing: 1px;
 		& a {
 			color: $gray;
+			transition: 0.3s ease;
 			&:hover {
 				color: $dark;
 			}
@@ -165,6 +166,7 @@
 	&__help-home {
 		& a {
 			color: $dark;
+			transition: 0.3s ease;
 			&:hover {
 				color: $gray;
 			}
