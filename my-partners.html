@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Личный кабинет</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<header class="personal-header">
+		<div class="personal-header__logo">
+			<a href="index.html">
+				<div class="logo">
+					<img class="logo__img" src="img/logo.png" alt="logo">
+					<div class="logo__text">EXDIRY</div>
+					<div class="io">io</div>
+				</div>
+			</a>
+		</div>
+		<!-- /.personal-header__logo -->
+		<div class="personal-header__name">
+			<div class="personal-header__name-img">
+				<img src="img/persona.png" alt="persona">
+			</div>
+			<div class="personal-header__name-text">
+				Здравствуйте, <span>Имя</span>
+			</div>
+		</div>
+		<!-- /.personal-header__name -->
+	</header>
+	<!-- /.personal-header -->
+
+	<div class="personal-wrap">
+		<div class="personal__menu">
+			<ul class="personal__menu-items">
+				<li class="personal__menu-item">
+					<svg>
+						<use xlink:href="img/sprite.svg#wallet"></use>
+					</svg>
+					<a href="personal.html" class="personal__menu-link">Депозиты</a>
+				</li>
+				<li class="personal__menu-item">
+					<svg>
+						<use xlink:href="img/sprite.svg#db"></use>
+					</svg>
+					<a href="history.html" class="personal__menu-link">История транзакций</a>
+				</li>
+				<li class="personal__menu-item">
+					<svg>
+						<use xlink:href="img/sprite.svg#partner"></use>
+					</svg>
+					<a href="partner-program.html" class="personal__menu-link">Партнерская программа</a>
+				</li>
+				<li class="personal__menu-item active">
+					<svg>
+						<use xlink:href="img/sprite.svg#mypartner"></use>
+					</svg>
+					<a href="my-partners.html" class="personal__menu-link">Мои партнеры</a>
+				</li>
+				<li class="personal__menu-item">
+					<svg>
+						<use xlink:href="img/sprite.svg#brochure"></use>
+					</svg>
+					<a href="promotional.html" class="personal__menu-link">Рекламные материалы</a>
+				</li>
+			</ul>
+		</div>
+		<!-- /.personal__menu -->
+		<div class="personal-main"></div>
+		<!-- /.personal-main -->
+	</div>
+	<!-- /.personal-wrap -->
+
+
+</body>
+
+</html>
