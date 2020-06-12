@@ -23,7 +23,11 @@
         "../scss/blocks/_inputroom.scss",
         "../scss/blocks/_registration.scss",
         "../scss/blocks/_recovery.scss",
-        "../scss/blocks/_personal.scss"
+        "../scss/blocks/_personal.scss",
+        "../scss/blocks/_history.scss",
+        "../scss/blocks/_program.scss",
+        "../scss/blocks/_partners.scss",
+        "../scss/blocks/_promotional.scss"
     ],
     "names": [],
     "file": "style.css"
