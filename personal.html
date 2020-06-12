@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Личный кабинет</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<header class="personal-header">
+		<div class="personal-header__logo">
+			<a href="index.html">
+				<div class="logo">
+					<img class="logo__img" src="img/logo.png" alt="logo">
+					<div class="logo__text">EXDIRY</div>
+					<div class="io">io</div>
+				</div>
+			</a>
+		</div>
+		<!-- /.personal-header__logo -->
+		<div class="personal-header__name">
+			<div class="personal-header__name-img">
+				<img src="img/persona.png" alt="persona">
+			</div>
+			<div class="personal-header__name-text">
+				Здравствуйте, <span>Имя</span>
+			</div>
+		</div>
+		<!-- /.personal-header__name -->
+	</header>
+	<!-- /.personal-header -->
+
+	<div class="personal-wrap">
+		<div class="personal__menu">
+			<ul class="personal__menu-items">
+				<li class="personal__menu-item active">
+					<svg>
+						<use xlink:href="img/sprite.svg#wallet"></use>
+					</svg>
+					<a href="" class="personal__menu-link">Депозиты</a>
+				</li>
+				<li class="personal__menu-item">
+					<svg>
+						<use xlink:href="img/sprite.svg#db"></use>
+					</svg>
+					<a href="" class="personal__menu-link">История транзакций</a>
+				</li>
+				<li class="personal__menu-item">
+					<svg>
+						<use xlink:href="img/sprite.svg#partner"></use>
+					</svg>
+					<a href="" class="personal__menu-link">Партнерская программа</a>
+				</li>
+				<li class="personal__menu-item">
+					<svg>
+						<use xlink:href="img/sprite.svg#mypartner"></use>
+					</svg>
+					<a href="" class="personal__menu-link">Мои партнеры</a>
+				</li>
+				<li class="personal__menu-item">
+					<svg>
+						<use xlink:href="img/sprite.svg#brochure"></use>
+					</svg>
+					<a href="" class="personal__menu-link">Рекламные материалы</a>
+				</li>
+			</ul>
+		</div>
+		<!-- /.personal__menu -->
+		<div class="personal-main">
+			<div class="personal-main__row">
+				<div class="personal-main__card">
+					<div class="personal-main__card-title">Сумма депозитов</div>
+					<div class="personal-main__card-item">
+						<img src="img/wallet2.png" alt="wallet">
+						<span>0.00</span> ₽
+					</div>
+				</div>
+				<!-- /.personal-main__card -->
+				<div class="personal-main__card">
+					<div class="personal-main__card-title">Баланс</div>
+					<div class="personal-main__card-item">
+						<img src="img/money.png" alt="money">
+						<span>0.00</span> ₽
+					</div>
+				</div>
+				<!-- /.personal-main__card -->
+				<div class="personal-main__card">
+					<div class="personal-main__card-title">Заработано партнерских</div>
+					<div class="personal-main__card-item">
+						<img src="img/handshake.png" alt="handshake">
+						<span>0.00</span> ₽
+					</div>
+				</div>
+				<!-- /.personal-main__card -->
+			</div>
+			<!-- /.personal-main__row -->
+			<div class="personal-main__desk">
+				<div class="personal-main__desk-title">Выберите тариф:</div>
+				<div class="personal-main__desk-row">
+					<div class="personal-main__desk-card">
+						<img src="img/guard.svg" alt="guard">
+						<div class="personal-main__desk-card-title">Депозит на 30 дней</div>
+						<div class="personal-main__desk-card-list">
+							<div>Депозит от 10 до 5 000 $</div>
+							<div>Плавающий от 0.10% до 0.25%</div>
+							<div>Возврат депозита в конце срока</div>
+							<div>Начисления по рабочим дням</div>
+						</div>
+					</div>
+					<!-- /.personal-main__desk-card -->
+					<div class="personal-main__desk-card">
+						<img src="img/cup.svg" alt="cup">
+						<div class="personal-main__desk-card-title">Депозит на 45 дней</div>
+						<div class="personal-main__desk-card-list">
+							<div>Депозит от 50 до 1 000 $</div>
+							<div>Фиксированный от 0.20%</div>
+							<div>Возврат депозита в конце срока</div>
+							<div>Начисления по рабочим дням</div>
+							<p>
+								Возможен досрочный вывод.
+								Отработал до 20 дней включительно:
+								возврат невозможен; от 21 до 44 дней:
+								комиссия 30%.
+							</p>
+						</div>
+					</div>
+					<!-- /.personal-main__desk-card -->
+					<div class="personal-main__desk-card">
+						<img src="img/depo.svg" alt="depo">
+						<div class="personal-main__desk-card-title">Депозит на 90 дней</div>
+						<div class="personal-main__desk-card-list">
+							<div>Депозит от 100 до 3 000 $</div>
+							<div>Плавающий макс от 0.15% до 0.4%</div>
+							<div>Возврат депозита в конце срока</div>
+							<div>Начисления по рабочим дням</div>
+							<p>
+								Возможен досрочный вывод.
+								Отработал до 30 дней включительно:
+								комиссия 35%; от 31 до 60 дней:
+								комиссия 30%; от 61 до 89
+								дней: комиссия 20%.
+							</p>
+						</div>
+					</div>
+					<!-- /.personal-main__desk-card -->
+					<div class="personal-main__desk-card">
+						<img src="img/winner.svg" alt="winner">
+						<div class="personal-main__desk-card-title">Депозит на 180 дней</div>
+						<div class="personal-main__desk-card-list">
+							<div>Депозит от 1 000 до 10 000 $</div>
+							<div>Фиксированный 0.3%</div>
+							<div>Досрочный вывод невозможен</div>
+							<div>Начисления по рабочим дням</div>
+						</div>
+					</div>
+					<!-- /.personal-main__desk-card -->
+				</div>
+				<!-- /.personal-main__desk-row -->
+				<div class="personal-main__wallet">
+
+					<div class="personal-main__wallet-depo">
+						<div class="personal-main__wallet-depo-title">
+							Введите сумму депозита:
+						</div>
+						<div class="personal-main__wallet-depo-type">
+							<p>Сумма инвестиции</p>
+							<input type="text" class="personal-main__wallet-depo-input" placeholder="0.00">
+						</div>
+						<span>Вы можете вложить от 10 до 10 000 $</span>
+						<button class="personal-main__wallet-depo-btn" type="submit">
+							<svg>
+								<use xlink:href="img/sprite.svg#money"></use>
+							</svg>
+							Создать депозит
+						</button>
+					</div>
+					<!-- /.personal-main__wallet-depo -->
+
+					<div class="personal-main__wallet-pay">
+						<div class="personal-main__wallet-pay-title">
+							Хотите вывести средства?
+						</div>
+						<button class="personal-main__wallet-pay-btn" type="submit">
+							<svg>
+								<use xlink:href="img/sprite.svg#payment"></use>
+							</svg>
+							Вывести средства
+						</button>
+					</div>
+					<!-- /.personal-main__wallet-pay -->
+
+				</div>
+				<!-- /.personal-main__wallet -->
+			</div>
+			<!-- /.personal-main__desk -->
+		</div>
+		<!-- /.personal-main -->
+	</div>
+	<!-- /.personal__wrap -->
+
+
+
+</body>
+
+</html>
