@@ -343,7 +343,6 @@ a {
       -ms-flex-align: center;
           align-items: center;
   background-color: #ffffff;
-  color: #2d4dbc;
   font-size: 16px;
   font-weight: 500;
   width: 260px;
@@ -352,6 +351,15 @@ a {
           box-shadow: 0px 0px 10px rgba(146, 146, 146, 0.35);
   border-radius: 50px;
   cursor: pointer;
+}
+
+.button-privat a {
+  padding: 10px 30px;
+  color: #2d4dbc;
+}
+
+.button-privat a:hover {
+  color: #00d1ff;
 }
 
 .tarifs__cards-btn {
@@ -2666,5 +2674,19 @@ a {
   height: 20px;
   fill: #ffffff;
   margin-right: 10px;
+}
+
+.history {
+  padding: 80px 0 0 0;
+}
+
+.history__desk {
+  width: 1220px;
+  height: 490px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 0px 10px rgba(124, 124, 206, 0.27);
+          box-shadow: 0px 0px 10px rgba(124, 124, 206, 0.27);
+  border-radius: 10px;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=style.css.map */

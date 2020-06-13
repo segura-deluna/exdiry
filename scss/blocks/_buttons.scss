@@ -67,7 +67,6 @@
 	justify-content: center;
 	align-items: center;
 	background-color: #ffffff;
-	color: $blue-icon;
 	font-size: 16px;
 	font-weight: 500;
 	width: 260px;
@@ -75,6 +74,13 @@
 	box-shadow: 0px 0px 10px rgba(146, 146, 146, 0.35);
 	border-radius: 50px;
 	cursor: pointer;
+	& a {
+		padding: 10px 30px;
+		color: $blue-icon;
+		&:hover {
+			color: $blue;
+		}
+	}
 }
 
 .tarifs__cards-btn {
