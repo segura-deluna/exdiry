@@ -120,3 +120,41 @@
 		box-shadow: 0px 0px 10px rgba(146, 146, 146, 0.75);
 	}
 }
+
+.btn-detail {
+	width: 105px;
+	height: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(180deg, #3bd1d1 0%, #46129a 100%),
+		linear-gradient(180deg, #ffffff 0%, rgba(22, 2, 2, 0) 100%);
+	border-radius: 50px;
+	color: #fff;
+	font-size: 12px;
+}
+
+.btn-go {
+	width: 105px;
+	height: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(180.13deg, #d03ba6 0.47%, #831fb1 99.53%);
+	border-radius: 50px;
+	color: #fff;
+	font-size: 12px;
+}
+
+.promo-btn-download {
+	width: 105px;
+	height: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(180deg, #3bd1d1 0%, #46129a 100%),
+		linear-gradient(180deg, #ffffff 0%, rgba(22, 2, 2, 0) 100%);
+	border-radius: 50px;
+	color: #fff;
+	font-size: 12px;
+}
