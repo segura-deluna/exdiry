@@ -1,12 +1,170 @@
 .history {
 	padding: 80px 0 0 0;
 
-	&__desk {
+	&-desk {
 		width: 1220px;
 		height: 490px;
 		background: #ffffff;
 		box-shadow: 0px 0px 10px rgba(124, 124, 206, 0.27);
 		border-radius: 10px;
 		margin: 0 auto;
+		padding: 40px;
+
+		&__title h2 {
+			font-size: 30px;
+			font-weight: 500;
+			text-align: center;
+			margin-bottom: 20px;
+		}
+
+		&__depo {
+			display: flex;
+			width: 100%;
+			max-width: 1050px;
+			margin: 0 auto 45px;
+			border-bottom: 1px solid $gray;
+
+			&-suptitle {
+				background: linear-gradient(180.11deg, #d03ba6 0.47%, #831fb1 99.53%);
+				padding: 9px 20px;
+				border-left: 1px solid #ffffff;
+
+				& h3 {
+					font-size: 12px;
+					font-weight: 500;
+					color: #fff;
+				}
+			}
+
+			&-tab {
+				text-align: center;
+
+				&.depo-tab1 {
+					width: 100%;
+					max-width: 163px;
+					& .history-desk__depo-suptitle {
+						border-left: none;
+					}
+				}
+				&.depo-tab2 {
+					width: 100%;
+					max-width: 143px;
+				}
+				&.depo-tab3 {
+					width: 100%;
+					max-width: 175px;
+				}
+				&.depo-tab4 {
+					width: 100%;
+					max-width: 194px;
+				}
+				&.depo-tab5 {
+					width: 100%;
+					max-width: 186px;
+				}
+				&.depo-tab6 {
+					width: 100%;
+					max-width: 193px;
+					& .history-desk__depo-text {
+						border-right: 1px solid $gray;
+					}
+				}
+			}
+
+			&-text {
+				font-size: 12px;
+				font-weight: 500;
+				padding: 9px 20px;
+				border-left: 1px solid $gray;
+			}
+
+			&-progress {
+				width: 100%;
+				max-width: 715px;
+				height: 5px;
+				background: $gray-bg-menu;
+				margin: 0 auto 30px;
+				position: relative;
+				&-line {
+					position: absolute;
+					width: 95px;
+					height: 5px;
+					left: 0;
+					top: 0;
+					background: $blue-icon;
+				}
+			}
+		}
+
+		// * Personal-event ====================================
+
+		&__personal-event {
+			display: flex;
+			width: 100%;
+			max-width: 548px;
+			margin: 0 auto 45px;
+			border-bottom: 1px solid $gray;
+		}
+
+		&__personal-tab {
+			text-align: center;
+
+			&.personal-tab1 {
+				width: 100%;
+				max-width: 163px;
+				& .history-desk__personal-suptitle {
+					border-left: none;
+				}
+			}
+
+			&.personal-tab2 {
+				width: 100%;
+				max-width: 210px;
+			}
+
+			&.personal-tab3 {
+				width: 100%;
+				max-width: 175px;
+				& .history-desk__personal-text {
+					border-right: 1px solid $gray;
+				}
+			}
+		}
+
+		&__personal-suptitle {
+			background: linear-gradient(180.11deg, #d03ba6 0.47%, #831fb1 99.53%);
+			padding: 9px 20px;
+			border-left: 1px solid #ffffff;
+
+			& h3 {
+				font-size: 12px;
+				font-weight: 500;
+				color: #fff;
+			}
+		}
+
+		&__personal-text {
+			font-size: 12px;
+			font-weight: 500;
+			padding: 9px 20px;
+			border-left: 1px solid $gray;
+		}
+
+		&__personal-progress {
+			width: 100%;
+			max-width: 715px;
+			height: 5px;
+			background: $gray-bg-menu;
+			margin: 0 auto 30px;
+			position: relative;
+			&-line {
+				position: absolute;
+				width: 95px;
+				height: 5px;
+				left: 0;
+				top: 0;
+				background: $blue-icon;
+			}
+		}
 	}
 }
