@@ -1,12 +1,5 @@
 @font-face {
-  src: url("../fonts/Lato-Bold.woff") format("woff");
-  font-family: "Lato";
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  src: url("../fonts/Lato-Bold.woff2") format("woff2");
+  src: url("../fonts/LatoBold.woff") format("woff");
   font-family: "Lato";
   font-weight: 700;
   font-style: normal;
@@ -14,42 +7,21 @@
 
 @font-face {
   src: url("../fonts/NotoSansJP-Bold.woff") format("woff");
-  font-family: "Noto-B";
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  src: url("../fonts/NotoSansJP-Bold.woff2") format("woff2");
-  font-family: "Noto-B";
+  font-family: "Noto";
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   src: url("../fonts/NotoSansJP-Light.woff") format("woff");
-  font-family: "Noto-L";
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  src: url("../fonts/NotoSansJP-Light.woff2") format("woff2");
-  font-family: "Noto-L";
+  font-family: "Noto";
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   src: url("../fonts/NotoSansJP-Medium.woff") format("woff");
-  font-family: "Noto-M";
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  src: url("../fonts/NotoSansJP-Medium.woff2") format("woff2");
-  font-family: "Noto-M";
+  font-family: "Noto";
   font-weight: 500;
   font-style: normal;
 }
@@ -62,7 +34,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Noto-M", sans-serif;
+  font-family: "Noto", sans-serif;
+  font-weight: 500;
   font-size: 16px;
 }
 
@@ -2942,6 +2915,29 @@ a {
   background: -webkit-linear-gradient(#413eff 0% #da0e88 100%);
   background: -o-linear-gradient(#413eff 0% #da0e88 100%);
   background: linear-gradient(#413eff 0% #da0e88 100%);
+}
+
+.program {
+  padding: 40px 0 0 0;
+}
+
+.program-desk {
+  width: 1250px;
+  height: 720px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 0px 10px rgba(124, 124, 206, 0.27);
+          box-shadow: 0px 0px 10px rgba(124, 124, 206, 0.27);
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.program-desk__title h2 {
+  font-size: 30px;
+  font-weight: 500;
+  color: rgba(146, 146, 146, 0.6);
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .my-partners {
