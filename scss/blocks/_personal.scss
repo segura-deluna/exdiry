@@ -18,11 +18,53 @@
 	}
 
 	&__name-text {
+		position: relative;
+		width: 170px;
 		color: #ffffff;
 		line-height: 1;
 		margin-left: 10px;
+		transition: 0.3s ease;
+		&:hover {
+			color: $blue;
+			cursor: pointer;
+		}
+
+		& .name-menu {
+			display: none;
+			position: absolute;
+			top: 60px;
+			right: 15px;
+			width: 100%;
+			margin: 0;
+			background-color: #fff;
+
+			&__link {
+				width: 100%;
+				padding: 8px 30px;
+				&:hover {
+					background-color: $gray-bg-menu;
+				}
+
+				& a {
+					display: flex;
+					align-items: center;
+					font-size: 16px;
+					color: $dark;
+				}
+
+				& img {
+					margin-right: 7px;
+				}
+			}
+		}
+
+		& .name-menu.active {
+			display: block;
+		}
 	}
 }
+
+// * Body page ==============================================
 
 .personal {
 	&-wrap {
