@@ -2650,6 +2650,7 @@ a {
   border-radius: 50px;
   border: transparent;
   font-size: 18px;
+  color: #fff;
   background: -webkit-linear-gradient(269.94deg, #d03ba6 0.47%, #831fb1 99.53%);
   background: -o-linear-gradient(269.94deg, #d03ba6 0.47%, #831fb1 99.53%);
   background: linear-gradient(180.06deg, #d03ba6 0.47%, #831fb1 99.53%);
@@ -2736,6 +2737,7 @@ a {
   border-radius: 50px;
   border: transparent;
   font-size: 18px;
+  color: #fff;
   cursor: pointer;
 }
 
