@@ -4,12 +4,12 @@
 
 .program-desk {
 	width: 1250px;
-	height: 720px;
+	height: 710px;
 	background: #ffffff;
 	box-shadow: 0px 0px 10px rgba(124, 124, 206, 0.27);
 	border-radius: 10px;
 	margin: 0 auto;
-	padding: 40px;
+	padding: 30px 40px 40px 40px;
 
 	&__title h2 {
 		font-size: 30px;
@@ -68,6 +68,8 @@
 }
 
 // * Tabs content 1 (info) ========================
+// * ==============================================
+
 .tabs-content__container {
 	width: 100%;
 	max-width: 850px;
@@ -177,4 +179,166 @@
 	border-radius: 10px;
 	background: #ffffff;
 	box-shadow: 0px 0px 10px rgba(149, 149, 149, 0.51);
+}
+
+// * Tabs content 2 (table №1) ===========================
+// * =====================================================
+
+.table-1 {
+	width: 100%;
+	max-width: 1050px;
+	margin: 35px auto 0;
+
+	&__title-row {
+		display: flex;
+		font-size: 12px;
+		line-height: 14px;
+		color: #fff;
+	}
+
+	&__title-item-num,
+	&__title-item-deep,
+	&__title-item-percent {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		background: linear-gradient(170.92deg, #4ba5bb 9.08%, #302e9f 93.38%);
+		padding: 2px 30px;
+	}
+
+	&__title-item-num {
+		max-width: 155px;
+	}
+
+	&__title-item-deep {
+		max-width: 480px;
+	}
+
+	&__title-item-percent {
+		max-width: 415px;
+	}
+
+	&__row {
+		display: flex;
+		border-bottom: 1px solid $gray;
+	}
+
+	&__item-num,
+	&__item-deep,
+	&__item-percent {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		padding: 7px 30px;
+		font-size: 12px;
+		color: $dark;
+		border-left: 1px solid $gray;
+	}
+
+	&__item-num {
+		max-width: 155px;
+	}
+
+	&__item-deep {
+		max-width: 480px;
+	}
+
+	&__item-percent {
+		max-width: 415px;
+	}
+}
+
+// * Tabs content 3 (table №2) ===========================
+// * =====================================================
+
+.table-2 {
+	width: 100%;
+	max-width: 1050px;
+	margin: 35px auto 0;
+
+	&__title-row {
+		display: flex;
+		font-size: 12px;
+		line-height: 14px;
+		color: #fff;
+	}
+
+	&__title-item-num,
+	&__title-item-invest,
+	&__title-item-size,
+	&__title-item-size-all,
+	&__title-item-reward {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		background: linear-gradient(170.92deg, #4ba5bb 9.08%, #302e9f 93.38%);
+		padding: 2px 20px;
+	}
+
+	&__title-item-num {
+		max-width: 155px;
+	}
+
+	&__title-item-invest {
+		max-width: 245px;
+	}
+
+	&__title-item-size {
+		max-width: 220px;
+	}
+
+	&__title-item-size-all {
+		max-width: 275px;
+	}
+
+	&__title-item-reward {
+		max-width: 255px;
+	}
+
+	&__row {
+		display: flex;
+		border-bottom: 1px solid $gray;
+	}
+
+	&__item-num,
+	&__item-invest,
+	&__item-size,
+	&__item-size-all,
+	&__item-reward {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		padding: 7px 30px;
+		font-size: 12px;
+		color: $dark;
+		border-left: 1px solid $gray;
+	}
+
+	&__item-num {
+		max-width: 155px;
+	}
+
+	&__item-invest {
+		max-width: 245px;
+	}
+
+	&__item-size {
+		max-width: 220px;
+	}
+
+	&__item-size-all {
+		max-width: 275px;
+	}
+
+	&__item-reward {
+		max-width: 255px;
+	}
 }
