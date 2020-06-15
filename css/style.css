@@ -504,6 +504,56 @@ a {
   cursor: pointer;
 }
 
+.avatar-btn {
+  width: 312px;
+  height: 48px;
+  background: -webkit-linear-gradient(269.92deg, #e952f7 0.47%, #8c0b87 99.53%);
+  background: -o-linear-gradient(269.92deg, #e952f7 0.47%, #8c0b87 99.53%);
+  background: linear-gradient(180.08deg, #e952f7 0.47%, #8c0b87 99.53%);
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-size: 18px;
+}
+
+.download-btn {
+  width: 265px;
+  height: 48px;
+  background: -webkit-linear-gradient(293.38deg, #4ba5bb 9.08%, #302e9f 93.38%);
+  background: -o-linear-gradient(293.38deg, #4ba5bb 9.08%, #302e9f 93.38%);
+  background: linear-gradient(156.62deg, #4ba5bb 9.08%, #302e9f 93.38%);
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-size: 18px;
+}
+
 .invest {
   width: 100%;
   height: 900px;
@@ -3733,5 +3783,153 @@ a {
   bottom: 9px;
   font-size: 12px;
   color: #fff;
+}
+
+.setting {
+  padding: 35px 0 0 0;
+}
+
+.setting__wrap {
+  width: 100%;
+  max-width: 1295px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.setting-ava {
+  width: 100%;
+  max-width: 385px;
+  height: 680px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 0px 10px rgba(124, 124, 206, 0.27);
+          box-shadow: 0px 0px 10px rgba(124, 124, 206, 0.27);
+  border-radius: 10px;
+  padding-top: 35px;
+}
+
+.setting-ava__person {
+  text-align: center;
+}
+
+.setting-ava img {
+  display: block;
+  width: 245px;
+  height: 245px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+.setting-ava__login {
+  margin-bottom: 8px;
+}
+
+.setting-ava__email {
+  margin-bottom: 15px;
+}
+
+.setting-ava__rang {
+  width: 100%;
+  max-width: 340px;
+  height: 60px;
+  border: 2px solid #d03ba6;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 17px 0;
+  margin-bottom: 16px;
+}
+
+.setting-ava__rang p {
+  position: relative;
+}
+
+.setting-ava__rang p::before, .setting-ava__rang p::after {
+  position: absolute;
+  content: "";
+  width: 35px;
+  height: 1px;
+  top: 50%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#d03ba6), to(#831fb1));
+  background: -webkit-linear-gradient(#d03ba6 0%, #831fb1 100%);
+  background: -o-linear-gradient(#d03ba6 0%, #831fb1 100%);
+  background: linear-gradient(#d03ba6 0%, #831fb1 100%);
+}
+
+.setting-ava__rang p::before {
+  left: -40px;
+}
+
+.setting-ava__rang p::after {
+  right: -40px;
+}
+
+.setting-ava__btn {
+  width: 315px;
+  height: 140px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.setting-ava__btn p {
+  font-size: 14px;
+  color: rgba(146, 146, 146, 0.6);
+}
+
+.setting-room {
+  width: 100%;
+  max-width: 900px;
+  height: 680px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 0px 10px rgba(124, 124, 206, 0.27);
+          box-shadow: 0px 0px 10px rgba(124, 124, 206, 0.27);
+  border-radius: 10px;
 }
 /*# sourceMappingURL=style.css.map */

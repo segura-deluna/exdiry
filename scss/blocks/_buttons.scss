@@ -172,3 +172,31 @@
 	font-size: 18px;
 	cursor: pointer;
 }
+
+.avatar-btn {
+	width: 312px;
+	height: 48px;
+	background: linear-gradient(180.08deg, #e952f7 0.47%, #8c0b87 99.53%);
+	border-radius: 50px;
+	border: none;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	font-size: 18px;
+}
+
+.download-btn {
+	width: 265px;
+	height: 48px;
+	background: linear-gradient(156.62deg, #4ba5bb 9.08%, #302e9f 93.38%);
+	border-radius: 50px;
+	border: none;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	font-size: 18px;
+}
