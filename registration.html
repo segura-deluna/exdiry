@@ -5,14 +5,16 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>EXDIRY</title>
+	<link rel="icon" href="img/logo.png" type="image/x-icon">
+	<link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
 	<div class="registration">
-		<div class="registration__bg">
-			<div class="registration__img">
+		<div class="container">
+			<div class="registration__bg">
 				<img src="img/room_globe.png" alt="globe">
 				<a href="index.html">
 					<div class="logo logo-room">
@@ -22,53 +24,54 @@
 					</div>
 				</a>
 			</div>
-		</div>
-		<!-- /.registration__bg -->
-		<div class="registration-form">
-			<div class="registration-form__wrap">
-				<div class="registration-form__title">Открытие аккаунта</div>
-				<!-- /.registration__title -->
-				<form class="registration-form__data">
-					<input type="text" class="registration-form__input" placeholder="Ваш логин">
-					<input type="password" class="registration-form__input" placeholder="Ваш пароль">
-					<input type="email" class="registration-form__input" placeholder="Ваш E-Mail">
-					<input type="text" class="registration-form__input" placeholder="Ваше имя">
-					<input type="text" class="registration-form__input" placeholder="Ваша фамилия">
+			<!-- /.registration__bg -->
+			<div class="registration-form">
+				<div class="registration-form__wrap">
+					<div class="registration-form__title">Открытие аккаунта</div>
+					<!-- /.registration__title -->
+					<form class="registration-form__data">
+						<input type="text" class="registration-form__input" placeholder="Ваш логин">
+						<input type="password" class="registration-form__input" placeholder="Ваш пароль">
+						<input type="email" class="registration-form__input" placeholder="Ваш E-Mail">
+						<input type="text" class="registration-form__input" placeholder="Ваше имя">
+						<input type="text" class="registration-form__input" placeholder="Ваша фамилия">
 
-					<div class="registration-form__terms">
-						<input type="checkbox" id="check" class="check-input">
-						<label for="check" class="check-label">
-							<span>
-								Принимаю условия <a class="registration-form__terms-link" href="">пользовательского
-									соглашения</a>
-							</span>
-						</label>
+						<div class="registration-form__terms">
+							<input type="checkbox" id="check" class="check-input">
+							<label for="check" class="check-label">
+								<span>
+									Принимаю условия <a class="registration-form__terms-link" href="">пользовательского
+										соглашения</a>
+								</span>
+							</label>
+						</div>
+						<!-- /.registration-form__terms -->
+						<button class="registration-form__btn-reg" type="submit">
+							<svg>
+								<use xlink:href="img/sprite.svg#globe"></use>
+							</svg>
+							Зарегистрироваться
+						</button>
+						<!-- /.registration-form__btn -->
+					</form>
+					<!-- /.registration__data -->
+					<div class="registration-form__help">
+						<div class="registration-form__help-acc">
+							Уже есть аккаунт?
+							<a href="inputroom.html">Войти в личный кабинет</a>
+						</div>
+						<div class="registration-form__help-home">
+							<img src="img/arrow_help.png" alt="home">
+							<a href="index.html">Вернуться на главную страницу</a>
+						</div>
 					</div>
-					<!-- /.registration-form__terms -->
-					<button class="registration-form__btn-reg" type="submit">
-						<svg>
-							<use xlink:href="img/sprite.svg#globe"></use>
-						</svg>
-						Зарегистрироваться
-					</button>
-					<!-- /.registration-form__btn -->
-				</form>
-				<!-- /.registration__data -->
-				<div class="registration-form__help">
-					<div class="registration-form__help-acc">
-						Уже есть аккаунт?
-						<a href="personal.html">Войти в личный кабинет</a>
-					</div>
-					<div class="registration-form__help-home">
-						<img src="img/arrow_help.png" alt="home">
-						<a href="index.html">Вернуться на главную страницу</a>
-					</div>
+					<!-- /.registration-form__help -->
 				</div>
-				<!-- /.registration-form__help -->
+				<!-- /.registration-form__wrap -->
 			</div>
-			<!-- /.registration-form__wrap -->
+			<!-- /.registration-form -->
 		</div>
-		<!-- /.registration-form -->
+		<!-- /.container -->
 	</div>
 	<!-- /.registration -->
 

@@ -13,6 +13,14 @@ $(window).on('load', function () {
 		bgColor: 'transparent', // Allow custom background-color for Vide div,
 		className: '' // Add custom CSS class to Vide div
 	});
+
+	// Trigger tabs in modal calculator ========================
+	$('.calculator-tabs').on('click', '.calculator-tabs-triggers__item', function () {
+		$('.calculator-tabs').find('.active').removeClass('active');
+		$(this).addClass('active');
+		$('.calculator-tabs-content__item').eq($(this).index()).addClass('active');
+	});
+
 });
 
 

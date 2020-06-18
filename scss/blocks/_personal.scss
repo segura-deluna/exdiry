@@ -56,10 +56,10 @@
 					margin-right: 7px;
 				}
 			}
-		}
-
-		& .name-menu.active {
-			display: block;
+			&.active {
+				display: block;
+				z-index: 5;
+			}
 		}
 	}
 }
@@ -68,17 +68,23 @@
 
 .personal {
 	&-wrap {
+		position: relative;
 		display: flex;
 		width: 100%;
-		height: 100%;
-		background: $gray-bg;
+		background-color: $gray-bg;
+		background-size: cover;
 	}
 
 	&__menu {
-		width: 255px;
-		height: auto;
+		width: 100%;
+		max-width: 230px;
+		height: 810px;
 		background: #ffffff;
 		padding-right: 3px;
+		padding-bottom: 50%;
+		display: flex;
+		flex-direction: column;
+		// align-content: stretch;
 	}
 
 	&__menu-items {
@@ -105,25 +111,29 @@
 	&__menu-link {
 		margin-left: 5px;
 		color: $dark;
+		font-size: 15px;
 		font-weight: 500;
 	}
 
 	&-main {
+		position: relative;
 		width: 100%;
-		height: calc(100vh - 90px);
-		padding: 40px 70px 20px 15px;
+		height: 100%;
+		background: $gray-bg;
+		background-size: cover;
+		padding: 40px 20px 20px 15px;
 
 		&__row {
 			width: 100%;
 			max-width: 1270px;
 			display: flex;
 			justify-content: space-between;
-			margin-bottom: 15px;
+			margin: 0 auto 15px;
 		}
 
 		&__card {
 			width: 100%;
-			height: 135px;
+			min-height: 135px;
 			border-radius: 10px;
 			background: #ffffff;
 			margin-right: 15px;
@@ -161,7 +171,8 @@
 			justify-content: space-between;
 			border-radius: 10px;
 			background: #ffffff;
-			padding: 20px 30px 20px 20px;
+			padding: 20px;
+			margin: 0 auto;
 		}
 
 		&__desk-title {
@@ -178,15 +189,16 @@
 
 		&__desk-card {
 			width: 100%;
-			height: 235px;
+			max-width: 300px;
+			min-height: 235px;
 			background: #ffffff;
 			box-shadow: 0px 0px 10px rgba(124, 124, 206, 0.27);
 			border-radius: 10px;
-			margin-right: 10px;
-			padding: 10px 0 0 15px;
-			&:nth-child(4) {
-				margin-right: 0;
-			}
+			margin: 0 5px;
+			padding: 10px 0 5px 15px;
+			// &:nth-child(4) {
+			// 	margin-right: 0;
+			// }
 			& img {
 				display: block;
 				margin: 0 auto;
@@ -203,7 +215,7 @@
 			& div {
 				position: relative;
 				padding-left: 14px;
-				font-size: 15px;
+				font-size: 13px;
 				color: $gray-text;
 
 				&::before {
@@ -225,6 +237,7 @@
 				line-height: 14px;
 				color: $blue-text;
 				padding-left: 15px;
+				margin-top: 5px;
 				&::before {
 					position: absolute;
 					content: "";
@@ -239,7 +252,10 @@
 		}
 
 		&__wallet {
+			width: 100%;
+			max-width: 830px;
 			display: flex;
+			justify-content: space-between;
 			align-items: center;
 			margin: 0 auto;
 			position: relative;
@@ -248,23 +264,25 @@
 				position: absolute;
 				content: "";
 				display: block;
-				width: 95px;
+				width: 100%;
+				max-width: 65px;
 				height: 1px;
 				background: $blue-icon;
 				top: 50%;
 			}
 			&::before {
-				left: -120px;
+				left: -110px;
 			}
 			&::after {
-				right: -120px;
+				right: -110px;
 			}
 
 			// * Wallet-depo ================================
 
 			&-depo {
-				width: 470px;
-				height: 235px;
+				width: 100%;
+				max-width: 470px;
+				min-height: 235px;
 				background: #ffffff;
 				box-shadow: 0px 0px 10px rgba(124, 124, 206, 0.27);
 				border-radius: 10px;
@@ -329,12 +347,13 @@
 		// * Wallet-pay ==============================
 
 		&__wallet-pay {
-			width: 340px;
-			height: 185px;
+			width: 100%;
+			max-width: 340px;
+			min-height: 185px;
 			background: #ffffff;
 			box-shadow: 0px 0px 10px rgba(124, 124, 206, 0.27);
 			border-radius: 10px;
-			padding: 15px 22px 30px;
+			padding: 15px 40px 30px;
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;

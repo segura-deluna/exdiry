@@ -1,15 +1,16 @@
 .promotional {
-	padding: 55px 0 0 0;
+	padding: 55px 10px 0 10px;
 }
 
 .promotional-desk {
-	width: 1200px;
+	width: 100%;
+	max-width: 1200px;
 	height: 490px;
 	background: #ffffff;
 	box-shadow: 0px 0px 10px rgba(124, 124, 206, 0.27);
 	border-radius: 10px;
 	margin: 0 auto;
-	padding: 33px 80px 57px 44px;
+	padding: 33px 40px 57px 44px;
 
 	&__items {
 		position: relative;
@@ -30,7 +31,7 @@
 	}
 	&__item2 {
 		display: flex;
-		align-items: end;
+		align-items: flex-end;
 	}
 }
 

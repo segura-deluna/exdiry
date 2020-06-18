@@ -1,7 +1,6 @@
 .news {
-	width: 100%;
-	height: 100vh;
-	padding-top: 72px;
+	padding-top: 62px;
+	min-height: 100%;
 	background-image: url("../img/news_bg.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
@@ -40,9 +39,6 @@
 		align-items: center;
 		height: 100%;
 		padding: 15px 55px 60px;
-		&-no-img {
-			padding: 55px 55px 60px;
-		}
 	}
 
 	&__card-header {

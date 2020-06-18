@@ -17,3 +17,9 @@ document.querySelectorAll('.tabs-triggers__item').forEach((item) => {
 });
 
 document.querySelector('.tabs-triggers__item').click();
+
+
+
+
+
+

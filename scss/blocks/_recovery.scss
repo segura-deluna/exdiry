@@ -1,15 +1,43 @@
 .recovery {
-	display: flex;
-	&__bg {
-		width: 100%;
-		max-width: 710px;
-		height: 100vh;
-		background-image: url("../img/room_bg.jpg");
-		background-repeat: no-repeat;
+	width: 100%;
+	min-height: 100%;
+	background-image: url("../img/room_bg.jpg");
+	background-repeat: no-repeat;
+	background-size: 45% 100%;
+
+	& .container {
 		display: flex;
+		justify-content: space-between;
+		margin: 0 auto;
+	}
+
+	&__bg {
+		display: flex;
+		flex-direction: column;
 		justify-content: center;
-		align-items: flex-start;
-		padding: 100px;
+		padding: 100px 0 200px 0;
+		margin-left: -5%;
+	}
+}
+
+.logo-room {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 350px;
+
+	& .logo__img {
+		width: 75px;
+		height: 67px;
+	}
+
+	& .logo__text {
+		font-size: 50px;
+	}
+
+	& .io {
+		width: 62px;
+		height: 54px;
+		font-size: 50px;
 	}
 }
 
