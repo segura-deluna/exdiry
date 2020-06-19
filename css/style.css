@@ -1221,7 +1221,7 @@ a {
 }
 
 .bot {
-  padding-top: 62px;
+  padding-top: 60px;
   min-height: 100%;
   background-image: url("../img/bot_bg.jpg");
   background-repeat: no-repeat;
@@ -1273,6 +1273,7 @@ a {
   display: block;
   width: 100%;
   max-width: 224px;
+  cursor: pointer;
 }
 
 .bot__card {
@@ -1378,16 +1379,16 @@ a {
   overflow: hidden;
 }
 
-.bot__slider .slides {
+.slides {
   width: 100%;
-  height: 415px;
+  height: 400px;
   margin: 0;
   padding: 0;
   list-style: none;
   overflow-x: hidden;
 }
 
-.bot__slider .slides > li {
+.slides > li {
   width: 100%;
   height: auto;
   position: absolute;
@@ -1395,18 +1396,19 @@ a {
   overflow-x: hidden;
 }
 
-.bot__slider .slides > li > img {
+.slides > li > img {
   width: 100%;
   height: auto;
 }
 
-.bot__slider .slides li:target {
+.bot__slide.active {
+  display: block;
   z-index: 3;
   -webkit-animation: slide 1s 1;
           animation: slide 1s 1;
 }
 
-.bot__slider .slides li:not(:target) {
+.bot__slide:not(.active) {
   display: none;
 }
 

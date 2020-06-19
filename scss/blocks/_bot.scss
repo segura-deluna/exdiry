@@ -1,5 +1,5 @@
 .bot {
-	padding-top: 62px;
+	padding-top: 60px;
 	min-height: 100%;
 	background-image: url("../img/bot_bg.jpg");
 	background-repeat: no-repeat;
@@ -44,6 +44,7 @@
 		display: block;
 		width: 100%;
 		max-width: 224px;
+		cursor: pointer;
 	}
 
 	&__card {
