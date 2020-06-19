@@ -11,7 +11,7 @@ const faqSwiper = new Swiper('.faq__slider-container', {
 		prevEl: '.swiper-button-prev',
 	},
 	pagination: {
-		el: '.swiper-pagination',
+		el: '.faq__swiper-pagination',
 		clickable: true,
 		renderBullet: function (index, className) {
 			return '<span class="' + className + '">' + (index + 1) + '</span>';
@@ -35,3 +35,6 @@ const newsSwiper = new Swiper('.news__slider-container', {
 	}
 
 });
+
+
+

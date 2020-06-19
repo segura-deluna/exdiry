@@ -1,0 +1,43 @@
+.bot__slider {
+	display: block;
+	position: relative;
+	width: 100%;
+	padding-top: 20px;
+	overflow: hidden;
+}
+.bot__slider .slides {
+	width: 100%;
+	height: 415px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	overflow-x: hidden;
+}
+.bot__slider .slides > li {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	z-index: 1;
+	overflow-x: hidden;
+}
+.bot__slider .slides > li > img {
+	width: 100%;
+	height: auto;
+}
+
+.bot__slider .slides li:target {
+	z-index: 3;
+	animation: slide 1s 1;
+}
+.bot__slider .slides li:not(:target) {
+	display: none;
+}
+
+@keyframes slide {
+	0% {
+		transform: translateX(-100%);
+	}
+	100% {
+		transform: translateX(0%);
+	}
+}

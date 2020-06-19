@@ -116,7 +116,7 @@
 
 // * Slider pagination =================
 
-.swiper-pagination {
+.faq__swiper-pagination {
 	position: relative;
 	display: flex;
 	justify-content: space-between;
@@ -127,23 +127,21 @@
 		justify-content: center;
 		align-items: center;
 	}
-}
-
-.swiper-pagination-bullet {
-	width: 90px;
-	height: 90px;
-	text-align: center;
-	line-height: 20px;
-	font-size: 18px;
-	color: #ffffff;
-	opacity: 1;
-	background: url("../img/circle.png");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-}
-
-.swiper-pagination-bullet-active {
-	width: 120px;
-	height: 120px;
+	& .swiper-pagination-bullet {
+		width: 90px;
+		height: 90px;
+		text-align: center;
+		line-height: 20px;
+		font-size: 18px;
+		color: #ffffff;
+		opacity: 1;
+		background: url("../img/circle.png");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+	& .swiper-pagination-bullet-active {
+		width: 120px;
+		height: 120px;
+	}
 }
