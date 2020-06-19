@@ -1,3 +1,276 @@
 .output {
 	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	padding-top: 1vh;
+	background-color: rgba(0, 0, 0, 0.4);
+
+	&__content {
+		position: relative;
+		width: 100%;
+		max-width: 1260px;
+		height: 830px;
+		padding: 15px 40px 30px;
+		margin: auto;
+		background-color: #ffffff;
+		border-radius: 10px;
+		animation-name: animatefade;
+		animation-duration: 1s;
+		&-wrap {
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+		}
+	}
+
+	&__close {
+		position: absolute;
+		top: 20px;
+		right: 40px;
+		cursor: pointer;
+	}
+
+	// * Output ====================================
+
+	&__pay-title {
+		& h2 {
+			width: 245px;
+			font-size: 28px;
+			color: $gray-text;
+			margin: 0 auto 15px;
+		}
+	}
+
+	&__pay-desk {
+		width: 100%;
+		width: 1060px;
+		height: 340px;
+		padding: 50px 60px;
+		box-shadow: 0px 0px 10px rgba(124, 124, 206, 0.27);
+		border-radius: 10px;
+	}
+
+	&__pay-row {
+		display: flex;
+	}
+
+	&__pay-ballans {
+		width: 100%;
+		max-width: 250px;
+		font-size: 25px;
+
+		& h3 {
+			font-size: 20px;
+			color: $dark;
+			text-align: center;
+			margin-bottom: 10px;
+		}
+		& span {
+			font-size: 40px;
+			color: $dark;
+		}
+	}
+
+	&__pay-system {
+		position: relative;
+		padding-left: 30px;
+		&::before {
+			position: absolute;
+			display: block;
+			content: "";
+			width: 1px;
+			height: 105px;
+			left: 0;
+			bottom: 0;
+			background-color: $gray;
+		}
+		& h3 {
+			font-size: 18px;
+			color: $gray-text;
+			margin-bottom: 10px;
+		}
+	}
+
+	&__pay-system-block {
+		display: flex;
+	}
+
+	&__pay-system-item {
+		height: 100%;
+	}
+
+	&__pay-bank {
+		width: 183px;
+		height: 33px;
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+		& p {
+			font-size: 16px;
+			color: $dark;
+		}
+		&-img {
+			margin-right: 10px;
+		}
+	}
+
+	&__pay-row-bottom {
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__pay-sum {
+		width: 100%;
+		max-width: 310px;
+		& p {
+			font-size: 18px;
+			color: $gray-text;
+			text-align: center;
+			margin-bottom: 5px;
+		}
+	}
+
+	&__pay-input-sum {
+		width: 310px;
+		height: 80px;
+		padding: 15px 25px;
+		border-radius: 10px;
+		background-color: $gray-light;
+		& span {
+			display: block;
+			font-size: 14px;
+		}
+	}
+
+	&__pay-summa {
+		border: none;
+		background-color: transparent;
+		color: $dark;
+		&::placeholder {
+			color: $dark;
+			font-size: 18px;
+		}
+	}
+
+	&__pay-go {
+		width: 100%;
+		padding: 15px 0 0 40px;
+		text-align: center;
+		& p {
+			font-size: 14px;
+			color: $gray;
+		}
+	}
+
+	&__pay-go-btn {
+		width: 100%;
+		max-width: 570px;
+	}
+
+	// * Deposit ====================================
+	&__depo-title {
+		& h2 {
+			width: 700px;
+			font-size: 28px;
+			color: $gray-text;
+			margin: 0 auto 15px;
+		}
+	}
+
+	&__depo-desk {
+		width: 100%;
+		width: 1160px;
+		height: 330px;
+		padding: 20px 60px;
+		box-shadow: 0px 0px 10px rgba(124, 124, 206, 0.27);
+		border-radius: 10px;
+		& h4 {
+			font-size: 18px;
+			color: $dark;
+			margin: 0 0 15px 15px;
+		}
+	}
+
+	&__depo-block {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__depo-cards {
+		width: 100%;
+		max-width: 340px;
+		height: 220px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	&__depo-card {
+		width: 160px;
+		height: 100px;
+		border-radius: 10px;
+		background: $blue-card;
+		margin-bottom: 20px;
+		padding: 5px 40px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		& img {
+			margin-bottom: 5px;
+		}
+		& p {
+			font-size: 14px;
+			color: $dark;
+			text-align: center;
+		}
+	}
+
+	&__depo-descr {
+		display: flex;
+		margin-bottom: 20px;
+	}
+
+	&__depo-calendar,
+	&__depo-percent {
+		display: flex;
+		& img {
+			margin-right: 15px;
+		}
+		& p {
+			font-size: 14px;
+			color: $dark;
+		}
+		& span {
+			font-size: 30px;
+			color: $dark;
+		}
+	}
+
+	&__depo-calendar {
+		margin-right: 70px;
+	}
+
+	&__depo-button {
+		& p {
+			font-size: 14px;
+			color: $gray;
+		}
+	}
+}
+
+@keyframes animatefade {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }

@@ -195,7 +195,7 @@
 						<div class="personal-main__wallet-pay-title">
 							Хотите вывести средства?
 						</div>
-						<button class="personal-main__wallet-pay-btn" type="submit">
+						<button class="personal-main__wallet-pay-btn open-popup" data-popup="popup2">
 							<svg>
 								<use xlink:href="img/sprite.svg#payment"></use>
 							</svg>
@@ -214,6 +214,224 @@
 	<!-- /.personal__wrap -->
 
 
+	<!-- Modal window output money -->
+	<div id="popup2" class="output modal">
+		<div class="output__content">
+			<div class="output__close close">
+				<img src="img/close.svg" alt="close">
+			</div>
+
+			<div class="output__content-wrap">
+				<div class="outptut__pay">
+					<div class="output__pay-title">
+						<h2>Вывод средств:</h2>
+					</div>
+					<div class="output__pay-desk">
+						<div class="output__pay-row">
+							<div class="output__pay-ballans">
+								<h3>Текущий баланс:</h3>
+								<img src="img/money.png" alt="money">
+								<span>0.00</span> ₽
+							</div>
+							<!-- /.output__pay-ballans -->
+
+							<div class="output__pay-system">
+								<h3>Выберите платежную систему для вывода средств:</h3>
+
+								<div class="output__pay-system-block">
+
+									<div class="output__pay-system-item">
+
+										<div class="output__pay-bank">
+											<div class="output__pay-bank-img">
+												<img src="img/qiwi.png" alt="qiwi">
+											</div>
+											<p class="output__pay-bank-name">Qiwi</p>
+										</div>
+										<!-- /.output__pay-bank -->
+
+										<div class="output__pay-bank">
+											<div class="output__pay-bank-img">
+												<img src="img/mastercard.png" alt="mastercard">
+											</div>
+											<p class="output__pay-bank-name">Master Card</p>
+										</div>
+										<!-- /.output__pay-bank -->
+
+										<div class="output__pay-bank">
+											<div class="output__pay-bank-img">
+												<img src="img/yandex-money.png" alt="yandex-money">
+											</div>
+											<p class="output__pay-bank-name">Яндекс money</p>
+										</div>
+										<!-- /.output__pay-bank -->
+
+									</div>
+									<!-- /.output__pay-system-item -->
+
+									<div class="output__pay-system-item">
+										<div class="output__pay-bank">
+											<div class="output__pay-bank-img">
+												<img src="img/sberbank.png" alt="sberbank">
+											</div>
+											<p class="output__pay-bank-name">Сбербанк</p>
+										</div>
+										<!-- /.output__pay-bank -->
+
+										<div class="output__pay-bank">
+											<div class="output__pay-bank-img">
+												<img src="img/payeer.png" alt="Payeer">
+											</div>
+											<p class="output__pay-bank-name">Payeer</p>
+										</div>
+										<!-- /.output__pay-bank -->
+
+										<div class="output__pay-bank">
+											<div class="output__pay-bank-img">
+												<img src="img/visa.png" alt="Visa">
+											</div>
+											<p class="output__pay-bank-name">Visa</p>
+										</div>
+										<!-- /.output__pay-bank -->
+									</div>
+									<!-- /.output__pay-system-item -->
+
+									<div class="output__pay-system-item">
+										<div class="output__pay-bank">
+											<div class="output__pay-bank-img">
+												<img src="img/perfect-money.png" alt="Perfect money">
+											</div>
+											<p class="output__pay-bank-name">Perfect money</p>
+										</div>
+										<!-- /.output__pay-bank -->
+
+										<div class="output__pay-bank">
+											<div class="output__pay-bank-img">
+												<img src="img/bitcoin.png" alt="Bitkoin">
+											</div>
+											<p class="output__pay-bank-name">Bitkoin</p>
+										</div>
+										<!-- /.output__pay-bank -->
+
+									</div>
+									<!-- /.output__pay-system-item -->
+
+								</div>
+								<!-- /.output__pay-system-block -->
+							</div>
+							<!-- /.output__pay-system -->
+						</div>
+						<!-- /.output__pay-row  -->
+
+						<div class="output__pay-row output__pay-row-bottom">
+							<div class="output__pay-sum">
+								<p>Введите сумму для вывода:</p>
+								<div class="output__pay-input-sum">
+									<span>Вывести сумму</span>
+									<input type="text" class="output__pay-summa" placeholder="0.00">
+								</div>
+							</div>
+							<!-- /.output__pay-sum -->
+							<div class="output__pay-go">
+								<button class="personal-main__wallet-pay-btn output__pay-go-btn">
+									<svg>
+										<use xlink:href="img/sprite.svg#payment"></use>
+									</svg>
+									Вывести средства
+								</button>
+								<p>*Заявки на вывод средств с баланса обрабатывается в течение 48 часов</p>
+							</div>
+							<!-- /.output__pay-go -->
+						</div>
+						<!-- /.output__pay-row -->
+					</div>
+					<!-- /.output__pay-desk-->
+				</div>
+				<!-- /.outptut__pay -->
+
+				<div class="output__depo">
+					<div class="output__depo-title">
+						<h2>Подать заявку на досрочный вывод депозита:</h2>
+					</div>
+					<div class="output__depo-desk">
+						<h4>Выбор депозита:</h4>
+						<div class="output__depo-block">
+							<div class="output__depo-item">
+								<div class="output__depo-cards">
+									<div class="output__depo-card">
+										<img src="img/safe.svg" alt="safe">
+										<p>Депозит<br>
+											на 30 дней</p>
+									</div>
+									<!-- /.output__depo-card -->
+									<div class="output__depo-card">
+										<img src="img/cup-c.svg" alt="cup">
+										<p>Депозит<br>
+											на 45 дней</p>
+									</div>
+									<!-- /.output__depo-card -->
+									<div class="output__depo-card">
+										<img src="img/depo-c.svg" alt="depo">
+										<p>Депозит<br>
+											на 90 дней</p>
+									</div>
+									<!-- /.output__depo-card -->
+									<div class="output__depo-card">
+										<img src="img/winner-c.svg" alt="winner">
+										<p>Депозит<br>
+											на 180 дней</p>
+									</div>
+									<!-- /.output__depo-card -->
+								</div>
+								<!-- /.output__depo-cards -->
+							</div>
+							<!-- /.output__depo-item -->
+							<div class="output__depo-item">
+								<div class="output__depo-descr">
+									<div class="output__depo-calendar">
+										<img src="img/calendar.svg" alt="calendar">
+										<div class="output__depo-calendar-text">
+											<p>Дней в работе:</p>
+											<span>26</span>
+										</div>
+									</div>
+									<!-- /.output__depo-calendar -->
+									<div class="output__depo-percent">
+										<img src="img/money.svg" alt="percent">
+										<div class="output__depo-percent-text">
+											<p>Процент за возврат:</p>
+											<span>30%</span>
+										</div>
+									</div>
+									<!-- /.output__depo-percent -->
+								</div>
+								<!-- /.output__depo-descr -->
+								<div class="output__depo-button">
+									<div class="output__depo-request-btn">
+										Подать заявку на долгосрочный вывод
+									</div>
+									<p>*Заявки на досрочный вывод депозита обрабатывается в течение 72 дней с момента
+										подачи</p>
+								</div>
+								<!-- /.output__depo-button -->
+							</div>
+							<!-- /.output__depo-item -->
+						</div>
+						<!-- /.output__depo-block -->
+					</div>
+					<!-- /.output__depo-desk -->
+				</div>
+				<!-- /.output__depo -->
+			</div>
+			<!-- /.output__content-wrap -->
+		</div>
+		<!-- /.output__content -->
+	</div>
+	<!-- /.output -->
+
+
+	<script src="libs/jquery-3.5.1.min.js"></script>
+	<script src="js/modal.js"></script>
 	<script src="js/burger.js"></script>
 </body>
 
