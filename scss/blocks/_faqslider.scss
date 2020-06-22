@@ -1,18 +1,20 @@
 .faq__slider {
 	position: relative;
 	margin-bottom: 20px;
-	& h2 {
-		width: 200px;
-		color: #ffffff;
-		font-size: 30px;
-		margin: 0 auto;
-	}
 }
 
 .faq__slider-container {
-	height: 380px;
+	height: 430px;
 	width: 970px;
 	padding: 10px 0px;
+	& h2 {
+		width: 100%;
+		max-width: 500px;
+		color: #ffffff;
+		font-size: 30px;
+		text-align: center;
+		margin: 0 auto 20px;
+	}
 }
 
 .faq__item {
@@ -112,36 +114,4 @@
 }
 .swiper-button-next {
 	background: url("../img/next.svg");
-}
-
-// * Slider pagination =================
-
-.faq__swiper-pagination {
-	position: relative;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin-bottom: 15px;
-	& span {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-	& .swiper-pagination-bullet {
-		width: 90px;
-		height: 90px;
-		text-align: center;
-		line-height: 20px;
-		font-size: 18px;
-		color: #ffffff;
-		opacity: 1;
-		background: url("../img/circle.png");
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
-	}
-	& .swiper-pagination-bullet-active {
-		width: 120px;
-		height: 120px;
-	}
 }
