@@ -280,3 +280,26 @@
 		display: none;
 	}
 }
+
+@media (max-width: 640px) {
+	.button-work,
+	.button-calc {
+		width: 180px;
+		height: 40px;
+		font-size: 14px;
+	}
+	.btn-invest {
+		font-size: 14px;
+	}
+}
+@media (max-width: 415px) {
+	.button-work,
+	.button-calc {
+		width: 130px;
+		height: 30px;
+		font-size: 10px;
+	}
+	.btn-invest {
+		font-size: 12px;
+	}
+}

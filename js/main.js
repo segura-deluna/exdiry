@@ -1,4 +1,15 @@
 $(window).on('load', function () {
+
+	// Trigger tabs in modal calculator ========================
+	$('.calculator-tabs').on('click', '.calculator-tabs-triggers__item', function () {
+		$('.calculator-tabs').find('.active').removeClass('active');
+		$(this).addClass('active');
+		$('.calculator-tabs-content__item').eq($(this).index()).addClass('active');
+	});
+
+
+
+	//  Video background =============================
 	$('#invest').vide({
 		mp4: './video/saigon',
 		poster: './img/main_bg'
@@ -16,12 +27,7 @@ $(window).on('load', function () {
 			className: '' // Add custom CSS class to Vide div
 		});
 
-	// Trigger tabs in modal calculator ========================
-	$('.calculator-tabs').on('click', '.calculator-tabs-triggers__item', function () {
-		$('.calculator-tabs').find('.active').removeClass('active');
-		$(this).addClass('active');
-		$('.calculator-tabs-content__item').eq($(this).index()).addClass('active');
-	});
+
 
 });
 
