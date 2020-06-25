@@ -1,5 +1,5 @@
 .tarifs {
-	padding-top: 62px;
+	padding-top: 50px;
 	min-height: 100%;
 	background-image: url("../img/tarifs_bg.jpg");
 	background-repeat: no-repeat;
@@ -109,4 +109,12 @@
 	height: 6px;
 	background-color: #ffffff;
 	margin: 0 3px;
+}
+
+// * MEDIA ========================================
+
+@media (max-width: 1367px) {
+	.tarifs {
+		padding-top: 40px;
+	}
 }

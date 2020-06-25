@@ -88,3 +88,14 @@
 		margin-left: 10px;
 	}
 }
+
+// * MEDIA ========================================
+
+@media (max-width: 1281px) {
+	.bottom-text {
+		justify-content: center;
+	}
+	.bottom-text__mail {
+		display: none;
+	}
+}

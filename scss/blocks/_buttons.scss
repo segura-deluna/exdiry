@@ -1,4 +1,6 @@
 .button-entry {
+	width: 220px;
+	height: 50px;
 	font-family: "Noto", sans-serif;
 	font-size: 16px;
 	font-weight: 500;
@@ -266,4 +268,15 @@
 	align-items: center;
 	color: #fff;
 	font-size: 18px;
+}
+
+// * MEDIA ========================================
+
+@media (max-width: 1281px) {
+	.button-calc {
+		margin: 0;
+	}
+	.button-privat {
+		display: none;
+	}
 }

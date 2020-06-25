@@ -1,5 +1,5 @@
 .about {
-	padding-top: 62px;
+	padding-top: 50px;
 	min-height: 100%;
 	background-image: url("../img/main2_bg.jpg");
 	background-repeat: no-repeat;
@@ -45,6 +45,7 @@
 	&__pay-video {
 		height: 100%;
 		width: 555px;
+		margin-right: 10px;
 		background-image: url("../img/preview.jpg");
 		background-position: center;
 		background-color: #555555;
@@ -53,7 +54,8 @@
 
 	&__pay-descr {
 		height: 100%;
-		width: 615px;
+		width: 100%;
+		max-width: 615px;
 		text-align: center;
 		color: #ffffff;
 		padding: 25px 37px;
@@ -99,7 +101,8 @@
 
 	&__team-item {
 		display: flex;
-		width: 415px;
+		width: 100%;
+		max-width: 415px;
 		height: 100%;
 		padding: 25px;
 		background: linear-gradient(180deg, #e288f0 0%, #7728fa 100%);
@@ -125,5 +128,20 @@
 		font-size: 20px;
 		font-weight: 700;
 		margin-bottom: 5px;
+	}
+}
+
+// * MEDIA ========================================
+
+@media (max-width: 1367px) {
+	.about {
+		padding-top: 40px;
+	}
+}
+
+@media (max-width: 1281px) {
+	.about__team-item {
+		padding: 25px 10px;
+		margin: 0 5px;
 	}
 }

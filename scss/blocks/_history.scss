@@ -78,23 +78,6 @@
 				padding: 9px 20px;
 				border-left: 1px solid $gray;
 			}
-
-			&-progress {
-				width: 100%;
-				max-width: 715px;
-				height: 5px;
-				background: $gray-bg-menu;
-				margin: 0 auto 30px;
-				position: relative;
-				&-line {
-					position: absolute;
-					width: 95px;
-					height: 5px;
-					left: 0;
-					top: 0;
-					background: linear-gradient(#413eff 0% #da0e88 100%);
-				}
-			}
 		}
 
 		// * Personal-event ====================================
@@ -149,23 +132,6 @@
 			font-weight: 500;
 			padding: 9px 20px;
 			border-left: 1px solid $gray;
-		}
-
-		&__personal-progress {
-			width: 100%;
-			max-width: 715px;
-			height: 5px;
-			background: $gray-bg-menu;
-			margin: 0 auto 30px;
-			position: relative;
-			&-line {
-				position: absolute;
-				width: 95px;
-				height: 5px;
-				left: 0;
-				top: 0;
-				background: linear-gradient(#413eff 0% #da0e88 100%);
-			}
 		}
 	}
 }
