@@ -1270,21 +1270,21 @@ a {
     height: 16px;
   }
   .bottom-text__descr--market {
-    font-size: 10px;
+    font-size: 9px;
   }
   .bottom-text__descr--market::after {
     width: 80px;
     top: 18px;
   }
   .bottom-text__descr--profi {
-    font-size: 10px;
+    font-size: 9px;
   }
   .bottom-text__descr--profi::after {
     width: 100px;
     top: 18px;
   }
   .bottom-text__descr--garant {
-    font-size: 10px;
+    font-size: 9px;
   }
   .bottom-text__descr--garant::after {
     width: 70px;
@@ -1486,7 +1486,7 @@ a {
   font-weight: 700;
   letter-spacing: 0.04em;
   color: #ffffff;
-  margin: 0 auto 45px;
+  margin: 0 auto 25px;
 }
 
 .about__title::before, .about__title::after {
@@ -1519,18 +1519,20 @@ a {
 }
 
 .about__pay-item {
-  height: 300px;
+  margin: 0 10px;
 }
 
 .about__pay-video {
-  height: 100%;
-  width: 555px;
-  margin-right: 10px;
-  background-image: url("../img/preview.jpg");
-  background-position: center;
+  width: 100%;
+  max-width: 555px;
   background-color: #555555;
   -webkit-box-shadow: 10px 10px 0px rgba(255, 255, 255, 0.25);
           box-shadow: 10px 10px 0px rgba(255, 255, 255, 0.25);
+}
+
+.about__pay-video img {
+  width: 100%;
+  display: block;
 }
 
 .about__pay-descr {
@@ -1565,6 +1567,7 @@ a {
   font-size: 20px;
   font-weight: 300;
   letter-spacing: 0.04em;
+  margin: 10px auto;
 }
 
 .about__pay-text p {
@@ -1583,18 +1586,13 @@ a {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 190px;
   margin-bottom: 25px;
 }
 
 .about__team-item {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   width: 100%;
   max-width: 415px;
-  height: 100%;
+  height: 190px;
   padding: 25px;
   background: -webkit-gradient(linear, left top, left bottom, from(#e288f0), to(#7728fa));
   background: -webkit-linear-gradient(top, #e288f0 0%, #7728fa 100%);
@@ -1605,25 +1603,31 @@ a {
   border-radius: 10px;
 }
 
-.about__team-img {
-  width: 50px;
-  height: 53px;
-  margin-right: 15px;
-}
-
-.about__team-img img {
-  display: block;
+.about__team-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 5px;
 }
 
 .about__team-descr {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
   color: #ffffff;
 }
 
-.about__team-title {
-  font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 5px;
+.about__team-img {
+  width: 50px;
+  height: 53px;
+  margin: 10px 15px 0 0;
+}
+
+.about__team-img img {
+  display: block;
 }
 
 @media (max-width: 1367px) {
@@ -1636,6 +1640,78 @@ a {
   .about__team-item {
     padding: 25px 10px;
     margin: 0 5px;
+  }
+}
+
+@media (max-width: 1081px) {
+  .about__pay-text {
+    font-size: 14px;
+  }
+  .about__team-text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 992px) {
+  .about {
+    padding-bottom: 25px;
+  }
+  .about__pay {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  .about__pay-video {
+    margin-bottom: 25px;
+  }
+  .about__pay-item {
+    height: auto;
+  }
+  .about__pay-title {
+    margin: 10px auto;
+  }
+  .about__pay-text {
+    margin-bottom: 20px;
+  }
+  .about__team {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about__team-item {
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 660px) {
+  .about__title {
+    width: 300px;
+    margin: 25px auto;
+  }
+  .about__title h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 570px) {
+  .about__title::before, .about__title::after {
+    display: none;
+  }
+  .about__team {
+    margin-bottom: 0;
+  }
+  .bottom-text {
+    margin: 30px auto;
+  }
+}
+
+@media (max-width: 375px) {
+  .about__team-text {
+    font-size: 12px;
   }
 }
 
