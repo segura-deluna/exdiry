@@ -68,7 +68,7 @@ a {
   margin: 0 auto;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1367px) {
   .container {
     padding: 0 15px;
   }
@@ -866,6 +866,14 @@ a {
   }
 }
 
+@media (max-width: 1200px) {
+  .tarifs__cards-btn {
+    width: 160px;
+    height: 35px;
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 640px) {
   .button-work,
   .button-calc {
@@ -1234,21 +1242,21 @@ a {
     margin-left: 0;
   }
   .bottom-text__descr--market {
-    font-size: 12px;
+    font-size: 11px;
   }
   .bottom-text__descr--market::after {
     width: 90px;
     top: 20px;
   }
   .bottom-text__descr--profi {
-    font-size: 12px;
+    font-size: 11px;
   }
   .bottom-text__descr--profi::after {
     width: 140px;
     top: 20px;
   }
   .bottom-text__descr--garant {
-    font-size: 12px;
+    font-size: 11px;
   }
   .bottom-text__descr--garant::after {
     width: 100px;
@@ -1634,9 +1642,6 @@ a {
   .about {
     padding-top: 40px;
   }
-}
-
-@media (max-width: 1281px) {
   .about__team-item {
     padding: 25px 10px;
     margin: 0 5px;
@@ -1710,6 +1715,9 @@ a {
 }
 
 @media (max-width: 375px) {
+  .about__team-title {
+    font-size: 18px;
+  }
   .about__team-text {
     font-size: 12px;
   }
@@ -1765,9 +1773,21 @@ a {
   margin-bottom: 30px;
 }
 
+.tarifs__cards-items {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+
 .tarifs__cards-item {
-  width: 290px;
-  height: 540px;
+  width: 100%;
+  max-width: 290px;
+  min-height: 500px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1788,9 +1808,13 @@ a {
   padding: 0 15px;
 }
 
+.tarifs__cards-header {
+  width: 100%;
+}
+
 .tarifs__cards-round {
-  width: 205px;
-  height: 205px;
+  width: 100%;
+  max-width: 205px;
   margin: 0 auto 25px;
 }
 
@@ -1819,6 +1843,10 @@ a {
   top: 6px;
   left: -16px;
   background-image: url("../img/danger.png");
+}
+
+.tarifs__cards-btn {
+  margin-top: 10px;
 }
 
 .cards-range__list-title {
@@ -1860,6 +1888,60 @@ a {
 @media (max-width: 1367px) {
   .tarifs {
     padding-top: 40px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .tarifs__cards-warning p {
+    font-size: 12px;
+  }
+  .cards-range__list-title {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .tarifs {
+    padding-bottom: 15px;
+  }
+  .tarifs__cards {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+  }
+  .tarifs__cards-item {
+    max-width: 255px;
+    margin-bottom: 50px;
+  }
+  .tarifs__cards-range, .tarifs__cards-warning {
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 668px) {
+  .tarifs__title {
+    width: 280px;
+    margin: 25px auto 35px;
+  }
+  .tarifs__title h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 635px) {
+  .tarifs__cards-items {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 565px) {
+  .tarifs__title::before, .tarifs__title::after {
+    display: none;
   }
 }
 

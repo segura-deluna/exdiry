@@ -38,9 +38,16 @@
 		margin-bottom: 30px;
 	}
 
+	&__cards-items {
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+	}
+
 	&__cards-item {
-		width: 290px;
-		height: 540px;
+		width: 100%;
+		max-width: 290px;
+		min-height: 500px;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
@@ -48,9 +55,13 @@
 		padding: 0 15px;
 	}
 
+	&__cards-header {
+		width: 100%;
+	}
+
 	&__cards-round {
-		width: 205px;
-		height: 205px;
+		width: 100%;
+		max-width: 205px;
 		margin: 0 auto 25px;
 		& img {
 			display: block;
@@ -79,6 +90,9 @@
 				background-image: url("../img/danger.png");
 			}
 		}
+	}
+	&__cards-btn {
+		margin-top: 10px;
 	}
 }
 
@@ -116,5 +130,74 @@
 @media (max-width: 1367px) {
 	.tarifs {
 		padding-top: 40px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.tarifs {
+		&__cards {
+			&-warning {
+				& p {
+					font-size: 12px;
+				}
+			}
+		}
+	}
+	.cards-range {
+		&__list {
+			&-title {
+				font-size: 14px;
+			}
+		}
+	}
+}
+
+@media (max-width: 1100px) {
+	.tarifs {
+		padding-bottom: 15px;
+		&__cards {
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
+
+		&__cards-item {
+			max-width: 255px;
+			margin-bottom: 50px;
+		}
+		&__cards-range,
+		&__cards-warning {
+			margin-left: 15px;
+		}
+	}
+}
+
+@media (max-width: 668px) {
+	.tarifs {
+		&__title {
+			width: 280px;
+			margin: 25px auto 35px;
+			& h1 {
+				font-size: 30px;
+			}
+		}
+	}
+}
+
+@media (max-width: 635px) {
+	.tarifs {
+		&__cards-items {
+			flex-wrap: wrap;
+		}
+	}
+}
+
+@media (max-width: 565px) {
+	.tarifs {
+		&__title {
+			&::before,
+			&::after {
+				display: none;
+			}
+		}
 	}
 }

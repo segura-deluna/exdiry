@@ -141,9 +141,6 @@
 	.about {
 		padding-top: 40px;
 	}
-}
-
-@media (max-width: 1281px) {
 	.about__team-item {
 		padding: 25px 10px;
 		margin: 0 5px;
@@ -222,6 +219,9 @@
 
 @media (max-width: 375px) {
 	.about {
+		&__team-title {
+			font-size: 18px;
+		}
 		&__team-text {
 			font-size: 12px;
 		}

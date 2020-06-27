@@ -281,6 +281,14 @@
 	}
 }
 
+@media (max-width: 1200px) {
+	.tarifs__cards-btn {
+		width: 160px;
+		height: 35px;
+		font-size: 14px;
+	}
+}
+
 @media (max-width: 640px) {
 	.button-work,
 	.button-calc {
