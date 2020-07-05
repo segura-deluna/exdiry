@@ -4,9 +4,10 @@
 }
 
 .faq__slider-container {
-	height: 430px;
-	width: 970px;
-	padding: 10px 0px;
+	width: 100%;
+	max-width: 970px;
+	height: 450px;
+	padding: 0px 0px 20px;
 	& h2 {
 		width: 100%;
 		max-width: 500px;
@@ -18,7 +19,7 @@
 }
 
 .faq__item {
-	width: 700px;
+	width: 100%;
 	height: 360px;
 	display: flex;
 	justify-content: space-between;
@@ -26,7 +27,8 @@
 }
 
 .faq__card {
-	width: 440px;
+	width: 100%;
+	max-width: 440px;
 	height: 345px;
 	font-size: 20px;
 	font-weight: 700;
@@ -35,6 +37,7 @@
 	box-shadow: 0px 0px 10px rgba(80, 80, 80, 0.45);
 	border-radius: 10px;
 	overflow: hidden;
+	margin-right: 20px;
 }
 
 .faq__card-img {
@@ -89,6 +92,7 @@
 	width: 100%;
 	max-width: 470px;
 	& p {
+		width: 100%;
 		color: #ffffff;
 		padding-left: 20px;
 		border-left: 2px solid #ffffff;
@@ -114,4 +118,74 @@
 }
 .swiper-button-next {
 	background: url("../img/next.svg");
+}
+
+// * MEDIA ==========================================
+
+@media (max-width: 1150px) {
+	.swiper-button-prev,
+	.swiper-button-next {
+		display: none;
+	}
+	.faq {
+		&__slider-container {
+			padding: 0 0 50px;
+			& .faq__slider-scroll {
+				width: 70%;
+				height: 5px;
+				margin: 10px auto 5px;
+				background: rgba(255, 255, 255, 0.7);
+				left: 50%;
+				transform: translateX(-50%);
+				& .swiper-scrollbar-drag {
+					background: $blue-icon;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 840px) {
+	.faq {
+		&__descr {
+			& p {
+				font-size: 14px;
+			}
+		}
+	}
+}
+
+@media (max-width: 667px) {
+	.faq {
+		&__slider-container {
+			height: 700px;
+		}
+		&__item {
+			flex-wrap: wrap;
+			justify-content: center;
+			height: 600px;
+		}
+		&__card {
+			margin-right: 0;
+		}
+	}
+}
+
+@media (max-width: 560px) {
+	.faq {
+		&__slider-container {
+			& h2 {
+				font-size: 20px;
+			}
+		}
+		&__card {
+			&-img {
+				height: 190px;
+			}
+			height: 300px;
+			&-text {
+				font-size: 16px;
+			}
+		}
+	}
 }

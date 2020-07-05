@@ -1245,26 +1245,26 @@ a {
     font-size: 11px;
   }
   .bottom-text__descr--market::after {
-    width: 90px;
+    width: 80px;
     top: 20px;
   }
   .bottom-text__descr--profi {
     font-size: 11px;
   }
   .bottom-text__descr--profi::after {
-    width: 140px;
+    width: 120px;
     top: 20px;
   }
   .bottom-text__descr--garant {
     font-size: 11px;
   }
   .bottom-text__descr--garant::after {
-    width: 100px;
+    width: 80px;
     top: 20px;
   }
 }
 
-@media (max-width: 415px) {
+@media (max-width: 418px) {
   .bottom-text {
     margin: 200px auto 30px;
   }
@@ -2353,6 +2353,7 @@ a {
   font-size: 25px;
   font-weight: 700;
   letter-spacing: 0.04em;
+  text-align: center;
   color: #ffffff;
   margin: 0 auto 25px;
 }
@@ -2453,15 +2454,74 @@ a {
   }
 }
 
+@media (max-width: 1150px) {
+  .faq {
+    padding: 40px 0 25px;
+  }
+  .faq .bottom-text {
+    margin: 25px auto;
+  }
+}
+
+@media (max-width: 840px) {
+  .faq__tabs-items {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+  }
+  .faq__tabs-body {
+    position: relative;
+    width: 100%;
+    height: 450px;
+  }
+  .faq-tab__item {
+    margin: 0px 10px 25px;
+  }
+  .faq-tab__item.active {
+    margin: 0px 5px 15px;
+  }
+}
+
+@media (max-width: 667px) {
+  .faq__tabs-body {
+    height: 700px;
+  }
+}
+
+@media (max-width: 560px) {
+  .faq__title {
+    width: 100px;
+    margin: 20px auto;
+  }
+  .faq__title h1 {
+    font-size: 30px;
+  }
+  .faq-tab__item {
+    width: 70px;
+    height: 70px;
+  }
+  .faq-tab__item span {
+    font-size: 16px;
+  }
+  .faq-tab__item.active {
+    width: 100px;
+    height: 100px;
+  }
+}
+
 .faq__slider {
   position: relative;
   margin-bottom: 20px;
 }
 
 .faq__slider-container {
-  height: 430px;
-  width: 970px;
-  padding: 10px 0px;
+  width: 100%;
+  max-width: 970px;
+  height: 450px;
+  padding: 0px 0px 20px;
 }
 
 .faq__slider-container h2 {
@@ -2474,7 +2534,7 @@ a {
 }
 
 .faq__item {
-  width: 700px;
+  width: 100%;
   height: 360px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2488,7 +2548,8 @@ a {
 }
 
 .faq__card {
-  width: 440px;
+  width: 100%;
+  max-width: 440px;
   height: 345px;
   font-size: 20px;
   font-weight: 700;
@@ -2498,6 +2559,7 @@ a {
           box-shadow: 0px 0px 10px rgba(80, 80, 80, 0.45);
   border-radius: 10px;
   overflow: hidden;
+  margin-right: 20px;
 }
 
 .faq__card-img {
@@ -2588,6 +2650,7 @@ a {
 }
 
 .faq__descr p {
+  width: 100%;
   color: #ffffff;
   padding-left: 20px;
   border-left: 2px solid #ffffff;
@@ -2611,6 +2674,69 @@ a {
 
 .swiper-button-next {
   background: url("../img/next.svg");
+}
+
+@media (max-width: 1150px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+  .faq__slider-container {
+    padding: 0 0 50px;
+  }
+  .faq__slider-container .faq__slider-scroll {
+    width: 70%;
+    height: 5px;
+    margin: 10px auto 5px;
+    background: rgba(255, 255, 255, 0.7);
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .faq__slider-container .faq__slider-scroll .swiper-scrollbar-drag {
+    background: #2d4dbc;
+  }
+}
+
+@media (max-width: 840px) {
+  .faq__descr p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 667px) {
+  .faq__slider-container {
+    height: 700px;
+  }
+  .faq__item {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 600px;
+  }
+  .faq__card {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 560px) {
+  .faq__slider-container h2 {
+    font-size: 20px;
+  }
+  .faq__card {
+    height: 300px;
+  }
+  .faq__card-img {
+    height: 190px;
+  }
+  .faq__card-text {
+    font-size: 16px;
+  }
 }
 
 .news {

@@ -146,7 +146,7 @@
 		&__descr--market {
 			font-size: 11px;
 			&::after {
-				width: 90px;
+				width: 80px;
 				top: 20px;
 			}
 		}
@@ -154,7 +154,7 @@
 		&__descr--profi {
 			font-size: 11px;
 			&::after {
-				width: 140px;
+				width: 120px;
 				top: 20px;
 			}
 		}
@@ -162,13 +162,13 @@
 		&__descr--garant {
 			font-size: 11px;
 			&::after {
-				width: 100px;
+				width: 80px;
 				top: 20px;
 			}
 		}
 	}
 }
-@media (max-width: 415px) {
+@media (max-width: 418px) {
 	.bottom-text {
 		margin: 200px auto 30px;
 

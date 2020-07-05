@@ -12,6 +12,7 @@
 		font-size: 25px;
 		font-weight: 700;
 		letter-spacing: 0.04em;
+		text-align: center;
 		color: #ffffff;
 		margin: 0 auto 25px;
 		&::before,
@@ -91,5 +92,68 @@
 @media (max-width: 1367px) {
 	.faq {
 		padding-top: 40px;
+	}
+}
+
+@media (max-width: 1150px) {
+	.faq {
+		padding: 40px 0 25px;
+		& .bottom-text {
+			margin: 25px auto;
+		}
+	}
+}
+
+@media (max-width: 840px) {
+	.faq__tabs {
+		&-items {
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
+
+		&-body {
+			position: relative;
+			width: 100%;
+			height: 450px;
+		}
+	}
+
+	.faq-tab__item {
+		margin: 0px 10px 25px;
+		&.active {
+			margin: 0px 5px 15px;
+		}
+	}
+}
+
+@media (max-width: 667px) {
+	.faq__tabs {
+		&-body {
+			height: 700px;
+		}
+	}
+}
+
+@media (max-width: 560px) {
+	.faq {
+		&__title {
+			width: 100px;
+			margin: 20px auto;
+			& h1 {
+				font-size: 30px;
+			}
+		}
+	}
+
+	.faq-tab__item {
+		width: 70px;
+		height: 70px;
+		& span {
+			font-size: 16px;
+		}
+		&.active {
+			width: 100px;
+			height: 100px;
+		}
 	}
 }
