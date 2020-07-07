@@ -23,14 +23,23 @@ const newsSwiper = new Swiper('.news__slider-container', {
 	loop: true,
 	observer: true,
 	observeParents: true,
-	slidesPerView: 3,
 	centeredSlides: true,
-	speed: 800,
+	speed: 600,
 	navigation: {
 		nextEl: '.news-button-next',
 		prevEl: '.news-button-prev',
-	}
+	},
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+			spaceBetween: 10
+		},
 
+		840: {
+			slidesPerView: 3,
+			spaceBetween: 0
+		}
+	}
 });
 
 

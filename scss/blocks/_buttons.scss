@@ -289,6 +289,14 @@
 	}
 }
 
+@media (max-width: 902px) {
+	.news__card-btn {
+		width: 155px;
+		height: 35px;
+		font-size: 13px;
+	}
+}
+
 @media (max-width: 640px) {
 	.button-work,
 	.button-calc {
