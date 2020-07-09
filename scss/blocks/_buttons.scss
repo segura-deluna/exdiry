@@ -123,6 +123,62 @@
 	}
 }
 
+.room-form {
+	&__btn {
+		width: 220px;
+		height: 60px;
+		font-size: 18px;
+		color: #ffffff;
+		outline: transparent;
+		border: transparent;
+		background: linear-gradient(146.94deg, #4ba5bb 9.08%, #302e9f 93.38%);
+		border-radius: 50px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		transition: 0.3s ease;
+
+		& svg {
+			width: 20px;
+			height: 20px;
+			fill: #ffffff;
+			margin-right: 10px;
+			transition: 0.3s ease;
+		}
+
+		&:hover {
+			color: $blue;
+			& svg {
+				fill: $blue;
+			}
+		}
+	}
+	&__btn-reg {
+		display: inline-block;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 270px;
+		height: 60px;
+		color: $blue-icon;
+		font-size: 18px;
+		background-color: #ffffff;
+
+		box-shadow: 0px 0px 10px rgba(124, 124, 206, 0.27);
+		border: 3px solid;
+		border-image-slice: linear-gradient(to left, #4ba5bb, #302e9f);
+		border-radius: 50px;
+
+		& svg {
+			width: 24px;
+			height: 27px;
+			fill: $blue-icon;
+			margin-right: 10px;
+		}
+	}
+}
+
 .btn-detail {
 	width: 105px;
 	height: 25px;
@@ -289,6 +345,22 @@
 	}
 }
 
+@media (max-width: 1100px) {
+	.room-form {
+		&__btn {
+			width: 200px;
+			height: 45px;
+			margin-right: 15px;
+			font-size: 16px;
+		}
+		&__btn-reg {
+			width: 250px;
+			height: 45px;
+			font-size: 16px;
+		}
+	}
+}
+
 @media (max-width: 902px) {
 	.news__card-btn {
 		width: 155px;
@@ -317,5 +389,30 @@
 	}
 	.btn-invest {
 		font-size: 12px;
+	}
+
+	.room-form {
+		&__btn {
+			width: 200px;
+			height: 45px;
+			margin-right: 10px;
+			font-size: 14px;
+		}
+		&__btn-reg {
+			width: 250px;
+			height: 45px;
+			font-size: 14px;
+		}
+	}
+}
+
+@media (max-width: 355px) {
+	.room-form {
+		&__btn,
+		&__btn-reg {
+			& svg {
+				display: none;
+			}
+		}
 	}
 }
