@@ -249,10 +249,12 @@
 @media (max-width: 475px) {
 	.room-form {
 		padding: 130px 10px 70px;
+
 		&__title {
 			font-size: 20px;
 			margin-bottom: 40px;
 		}
+
 		&__pass,
 		&__help,
 		&__help-acc {

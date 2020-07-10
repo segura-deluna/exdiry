@@ -211,6 +211,26 @@
 	}
 }
 
+.recovery-form__btn {
+	width: 370px;
+	height: 60px;
+	font-size: 18px;
+	color: #ffffff;
+	outline: transparent;
+	border: transparent;
+	background: linear-gradient(146.94deg, #4ba5bb 9.08%, #302e9f 93.38%);
+	border-radius: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto 25px;
+	cursor: pointer;
+	transition: 0.3s ease;
+	&:hover {
+		color: $blue;
+	}
+}
+
 .btn-detail {
 	width: 105px;
 	height: 25px;
@@ -423,6 +443,12 @@
 		height: 40px;
 		font-size: 16px;
 	}
+
+	.recovery-form__btn {
+		width: 370px;
+		height: 45px;
+		font-size: 16px;
+	}
 }
 
 @media (max-width: 415px) {
@@ -449,6 +475,12 @@
 			font-size: 14px;
 		}
 	}
+
+	.recovery-form__btn {
+		width: 210px;
+		height: 35px;
+		font-size: 14px;
+	}
 }
 
 @media (max-width: 355px) {
@@ -461,7 +493,8 @@
 		}
 	}
 
-	.registration-form__btn-reg {
+	.registration-form__btn-reg,
+	.recovery-form__btn {
 		font-size: 14px;
 		& svg {
 			display: none;

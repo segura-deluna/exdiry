@@ -723,6 +723,40 @@ a {
   fill: #00d1ff;
 }
 
+.recovery-form__btn {
+  width: 370px;
+  height: 60px;
+  font-size: 18px;
+  color: #ffffff;
+  outline: transparent;
+  border: transparent;
+  background: -webkit-linear-gradient(303.06deg, #4ba5bb 9.08%, #302e9f 93.38%);
+  background: -o-linear-gradient(303.06deg, #4ba5bb 9.08%, #302e9f 93.38%);
+  background: linear-gradient(146.94deg, #4ba5bb 9.08%, #302e9f 93.38%);
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto 25px;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.recovery-form__btn:hover {
+  color: #00d1ff;
+}
+
 .btn-detail {
   width: 105px;
   height: 25px;
@@ -1045,6 +1079,11 @@ a {
     height: 40px;
     font-size: 16px;
   }
+  .recovery-form__btn {
+    width: 370px;
+    height: 45px;
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 415px) {
@@ -1068,16 +1107,23 @@ a {
     height: 45px;
     font-size: 14px;
   }
+  .recovery-form__btn {
+    width: 210px;
+    height: 35px;
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 355px) {
   .room-form__btn svg, .room-form__btn-reg svg {
     display: none;
   }
-  .registration-form__btn-reg {
+  .registration-form__btn-reg,
+  .recovery-form__btn {
     font-size: 14px;
   }
-  .registration-form__btn-reg svg {
+  .registration-form__btn-reg svg,
+  .recovery-form__btn svg {
     display: none;
   }
 }
@@ -3922,8 +3968,20 @@ a {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
+  max-width: 400px;
   padding: 100px 0 200px 0;
-  margin-left: -5%;
+}
+
+.recovery__bg-img {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.recovery__bg-img img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .logo-room {
@@ -3937,6 +3995,12 @@ a {
   height: 67px;
 }
 
+.logo-room .logo__img img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .logo-room .logo__text {
   font-size: 50px;
 }
@@ -3948,7 +4012,9 @@ a {
 }
 
 .recovery-form {
-  padding: 170px 0 0 105px;
+  width: 100%;
+  max-width: 700px;
+  padding: 170px 80px 0 90px;
 }
 
 .recovery-form__wrap {
@@ -3961,10 +4027,12 @@ a {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 540px;
+  width: 100%;
+  max-width: 540px;
 }
 
 .recovery-form__title {
+  width: 100%;
   font-size: 38px;
   font-weight: 700;
   margin-bottom: 65px;
@@ -4016,40 +4084,6 @@ a {
   color: rgba(146, 146, 146, 0.6);
 }
 
-.recovery-form__btn {
-  width: 370px;
-  height: 60px;
-  font-size: 18px;
-  color: #ffffff;
-  outline: transparent;
-  border: transparent;
-  background: -webkit-linear-gradient(303.06deg, #4ba5bb 9.08%, #302e9f 93.38%);
-  background: -o-linear-gradient(303.06deg, #4ba5bb 9.08%, #302e9f 93.38%);
-  background: linear-gradient(146.94deg, #4ba5bb 9.08%, #302e9f 93.38%);
-  border-radius: 50px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0 auto 25px;
-  cursor: pointer;
-  -webkit-transition: 0.3s ease;
-  -o-transition: 0.3s ease;
-  transition: 0.3s ease;
-}
-
-.recovery-form__btn:hover {
-  color: #00d1ff;
-}
-
 .recovery-form__help {
   text-align: center;
 }
@@ -4071,6 +4105,13 @@ a {
   color: #383838;
 }
 
+.recovery-form__help-home svg {
+  width: 19px;
+  height: 8px;
+  fill: #383838;
+  margin-right: 5px;
+}
+
 .recovery-form__help-home a {
   color: #383838;
   -webkit-transition: 0.3s ease;
@@ -4078,8 +4119,125 @@ a {
   transition: 0.3s ease;
 }
 
-.recovery-form__help-home a:hover {
+.recovery-form__help-home:hover svg {
+  fill: rgba(146, 146, 146, 0.6);
+}
+
+.recovery-form__help-home:hover a {
   color: rgba(146, 146, 146, 0.6);
+}
+
+@media (max-width: 1366px) {
+  .recovery__bg {
+    margin-left: 3%;
+  }
+}
+
+@media (max-width: 1165px) {
+  .recovery-form {
+    padding: 170px 30px 0 90px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .recovery-form {
+    padding: 170px 15px 0 60px;
+  }
+  .recovery-form__title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 930px) {
+  .recovery {
+    -webkit-background-size: cover;
+            background-size: cover;
+  }
+  .recovery__bg {
+    display: none;
+  }
+  .recovery-form {
+    padding: 170px 0 60px;
+    margin: 0 auto;
+  }
+  .recovery-form__wrap {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .recovery-form__title {
+    color: #ffffff;
+  }
+  .recovery-form__input {
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  .recovery-form__input::-webkit-input-placeholder {
+    color: #fff;
+  }
+  .recovery-form__input:-ms-input-placeholder {
+    color: #fff;
+  }
+  .recovery-form__input::-ms-input-placeholder {
+    color: #fff;
+  }
+  .recovery-form__input::placeholder {
+    color: #fff;
+  }
+  .recovery-form__help-acc {
+    color: #fff;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+  }
+  .recovery-form__help-acc a {
+    color: #fff;
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
+  }
+  .recovery-form__help-acc a:hover {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .recovery-form__help-home svg {
+    fill: #ffffff;
+  }
+  .recovery-form__help-home a {
+    color: #fff;
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
+  }
+  .recovery-form__help-home:hover svg {
+    fill: rgba(255, 255, 255, 0.5);
+  }
+  .recovery-form__help-home:hover a {
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+@media (max-width: 475px) {
+  .recovery-form {
+    padding: 130px 10px 70px;
+  }
+  .recovery-form__title {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  .recovery-form__help, .recovery-form__help-acc {
+    font-size: 14px;
+    letter-spacing: normal;
+  }
+}
+
+@media (max-width: 375px) {
+  .recovery-form__help, .recovery-form__help-acc {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 325px) {
+  .recovery-form__help, .recovery-form__help-acc {
+    font-size: 12px;
+  }
 }
 
 .personal-header {
