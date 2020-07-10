@@ -15,7 +15,9 @@
 	<div class="registration">
 		<div class="container">
 			<div class="registration__bg">
-				<img src="img/room_globe.png" alt="globe">
+				<div class="registration__bg-img">
+					<img src="img/room_globe.png" alt="globe">
+				</div>
 				<a href="index.html">
 					<div class="logo logo-room">
 						<img class="logo__img" src="img/room_logo.png" alt="logo">
@@ -39,10 +41,8 @@
 						<div class="registration-form__terms">
 							<input type="checkbox" id="check" class="check-input">
 							<label for="check" class="check-label">
-								<span>
-									Принимаю условия <a class="registration-form__terms-link" href="">пользовательского
-										соглашения</a>
-								</span>
+								<span>Принимаю условия</span>
+								<a class="registration-form__terms-link" href="">пользовательского соглашения</a>
 							</label>
 						</div>
 						<!-- /.registration-form__terms -->
@@ -61,7 +61,9 @@
 							<a href="inputroom.html">Войти в личный кабинет</a>
 						</div>
 						<div class="registration-form__help-home">
-							<img src="img/arrow_help.png" alt="home">
+							<svg>
+								<use xlink:href="img/sprite.svg#arrow-help"></use>
+							</svg>
 							<a href="index.html">Вернуться на главную страницу</a>
 						</div>
 					</div>

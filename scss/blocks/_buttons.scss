@@ -179,6 +179,38 @@
 	}
 }
 
+.registration-form__btn-reg {
+	width: 535px;
+	height: 60px;
+	font-size: 18px;
+	color: #ffffff;
+	outline: transparent;
+	border: transparent;
+	background: linear-gradient(146.94deg, #4ba5bb 9.08%, #302e9f 93.38%);
+	border-radius: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 30px;
+	cursor: pointer;
+	transition: 0.3s ease;
+
+	& svg {
+		width: 24px;
+		height: 27px;
+		fill: #ffffff;
+		margin-right: 10px;
+		transition: 0.3s ease;
+	}
+
+	&:hover {
+		color: $blue;
+		& svg {
+			fill: $blue;
+		}
+	}
+}
+
 .btn-detail {
 	width: 105px;
 	height: 25px;
@@ -359,6 +391,12 @@
 			font-size: 16px;
 		}
 	}
+
+	.registration-form__btn-reg {
+		width: 490px;
+		height: 50px;
+		margin: 0 auto 30px;
+	}
 }
 
 @media (max-width: 902px) {
@@ -379,7 +417,14 @@
 	.btn-invest {
 		font-size: 14px;
 	}
+	.registration-form__btn-reg {
+		width: 100%;
+		max-width: 490px;
+		height: 40px;
+		font-size: 16px;
+	}
 }
+
 @media (max-width: 415px) {
 	.button-work,
 	.button-calc {
@@ -413,6 +458,13 @@
 			& svg {
 				display: none;
 			}
+		}
+	}
+
+	.registration-form__btn-reg {
+		font-size: 14px;
+		& svg {
+			display: none;
 		}
 	}
 }
