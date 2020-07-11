@@ -1,5 +1,5 @@
 .setting {
-	padding: 35px 0 0 0;
+	padding: 45px 0 20px;
 	&__wrap {
 		width: 100%;
 		max-width: 1295px;
@@ -12,7 +12,6 @@
 .setting-ava {
 	width: 100%;
 	max-width: 385px;
-	height: 680px;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -20,18 +19,25 @@
 	background: #ffffff;
 	box-shadow: 0px 0px 10px rgba(124, 124, 206, 0.27);
 	border-radius: 10px;
-	padding-top: 35px;
+	padding: 35px 5px 0;
+	margin: 0 5px 0 10px;
 
 	&__person {
 		text-align: center;
+		width: 100%;
+		&-img {
+			width: 100%;
+			max-width: 245px;
+			margin: 0 auto;
+			& img {
+				width: 100%;
+				object-fit: cover;
+				border-radius: 50%;
+				margin-bottom: 30px;
+			}
+		}
 	}
-	& img {
-		display: block;
-		width: 245px;
-		height: 245px;
-		border-radius: 50%;
-		margin-bottom: 30px;
-	}
+
 	&__login {
 		margin-bottom: 8px;
 	}
@@ -73,7 +79,8 @@
 	}
 
 	&__btn {
-		width: 315px;
+		width: 100%;
+		max-width: 315px;
 		height: 140px;
 		display: flex;
 		flex-direction: column;
@@ -89,11 +96,11 @@
 .setting-room {
 	width: 100%;
 	max-width: 900px;
-	height: 680px;
 	background: #ffffff;
 	box-shadow: 0px 0px 10px rgba(124, 124, 206, 0.27);
 	border-radius: 10px;
 	padding: 25px 15px 15px 15px;
+	margin: 0 10px 0 5px;
 	&__title {
 		margin: 0 auto;
 		& h1 {
@@ -106,35 +113,39 @@
 	&__pass,
 	&__pay {
 		width: 100%;
-		width: 855px;
+		max-width: 855px;
 		background: #ffffff;
 		box-shadow: 0px 0px 10px rgba(124, 124, 206, 0.27);
 		border-radius: 10px;
 		margin: 0 auto;
 		padding: 15px 15px 15px 35px;
+
 		& h3 {
 			font-size: 20px;
 			color: $dark;
-			margin-bottom: 10px;
+			margin: 0 0 10px 5px;
 		}
 	}
 
 	&__pass {
-		height: 250px;
 		margin-bottom: 25px;
+
 		&-row {
 			display: flex;
 			margin-bottom: 25px;
 		}
 		&-item {
-			width: 270px;
+			width: 100%;
+			max-width: 270px;
+			margin: 0 5px;
 			& p {
 				font-size: 16px;
 				color: $gray-text;
 				margin-bottom: 3px;
 			}
 			& input {
-				width: 250px;
+				width: 100%;
+				max-width: 250px;
 				height: 45px;
 				background-color: transparent;
 				color: $dark;
@@ -151,22 +162,23 @@
 	}
 
 	&__pay {
-		height: 295px;
-
 		&-row {
 			display: flex;
 			margin-bottom: 15px;
 		}
 
 		&-item {
-			width: 270px;
+			width: 100%;
+			max-width: 270px;
+			margin: 0 5px;
 			& p {
 				font-size: 16px;
 				color: $gray-text;
 				margin-bottom: 3px;
 			}
 			& input {
-				width: 250px;
+				width: 100%;
+				max-width: 250px;
 				height: 45px;
 				background-color: transparent;
 				color: $dark;
@@ -175,4 +187,109 @@
 			}
 		}
 	}
+}
+
+// * MEDIA ====================================================
+@media (max-width: 1370px) {
+	.setting {
+		&-ava {
+			width: 100%;
+			max-width: 360px;
+			padding: 35px 15px 50px;
+			&__person-img {
+				max-width: 200px;
+			}
+		}
+
+		&-room {
+			&__pass-item,
+			&__pay-item {
+				& p {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1095px) {
+	.setting {
+		&-ava {
+			max-width: 300px;
+			padding: 35px 15px 50px;
+			&__person-img {
+				max-width: 200px;
+			}
+			&__rang {
+				& p {
+					&::before,
+					&::after {
+						display: none;
+					}
+				}
+			}
+		}
+
+		&-room {
+			&__pass,
+			&__pay {
+				& h3 {
+					text-align: center;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1010px) {
+	.setting {
+		&-ava {
+			max-width: 250px;
+		}
+	}
+}
+
+@media (max-width: 965px) {
+	.setting {
+		&-room {
+			&__pass-row,
+			&__pay-row {
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+			&__pass-item {
+				margin-bottom: 15px;
+				& input {
+					max-width: 270px;
+					margin: 0;
+				}
+				& a {
+					font-size: 14px;
+				}
+			}
+			&__pay-item {
+				& input {
+					max-width: 270px;
+					margin-bottom: 15px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 667px) {
+	.setting {
+		&__wrap {
+			flex-wrap: wrap;
+			justify-content: center;
+			padding: 0 10px;
+		}
+		&-ava {
+			max-width: 667px;
+			margin-bottom: 20px;
+		}
+	}
+}
+
+@media (max-width: 465px) {
 }

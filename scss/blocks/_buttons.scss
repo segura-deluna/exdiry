@@ -380,6 +380,18 @@
 
 // * MEDIA ========================================
 
+@media (max-width: 1370px) {
+	.avatar-btn {
+		width: 100%;
+		max-width: 300px;
+	}
+	.download-btn {
+		width: 100%;
+		max-width: 260px;
+		margin: 0 20px;
+	}
+}
+
 @media (max-width: 1281px) {
 	.button-calc {
 		margin: 0;
@@ -417,6 +429,25 @@
 		height: 50px;
 		margin: 0 auto 30px;
 	}
+
+	.avatar-btn {
+		height: 40px;
+		font-size: 14px;
+	}
+	.download-btn {
+		height: 40px;
+		max-width: 190px;
+		font-size: 14px;
+		margin: 0 20px;
+	}
+	.setting-pass {
+		height: 40px;
+		font-size: 14px;
+	}
+	.btn-save {
+		height: 40px;
+		font-size: 14px;
+	}
 }
 
 @media (max-width: 902px) {
@@ -452,6 +483,9 @@
 }
 
 @media (max-width: 415px) {
+	.button-entry {
+		font-size: 14px;
+	}
 	.button-work,
 	.button-calc {
 		width: 130px;
