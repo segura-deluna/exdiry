@@ -10,33 +10,21 @@
 	&__name {
 		display: flex;
 		align-items: center;
-	}
-
-	&__name-img {
-		width: 30px;
-		height: 30px;
-	}
-
-	&__name-text {
-		position: relative;
-		width: 170px;
-		color: #ffffff;
-		line-height: 1;
-		margin-left: 10px;
-		transition: 0.3s ease;
 		&:hover {
-			color: $blue;
 			cursor: pointer;
+			& .personal-header__name-text {
+				color: $blue;
+			}
 		}
-
 		& .name-menu {
 			display: none;
 			position: absolute;
-			top: 60px;
+			top: 95px;
 			right: 15px;
-			width: 100%;
+			width: 170px;
 			margin: 0;
 			background-color: #fff;
+			border: 1px solid $gray-border;
 
 			&__link {
 				width: 100%;
@@ -62,6 +50,20 @@
 			}
 		}
 	}
+
+	&__name-img {
+		width: 30px;
+		height: 30px;
+	}
+
+	&__name-text {
+		position: relative;
+		width: 170px;
+		color: #ffffff;
+		line-height: 1;
+		margin-left: 10px;
+		transition: 0.3s ease;
+	}
 }
 
 // * Body page ==============================================
@@ -86,6 +88,10 @@
 		display: flex;
 		flex-direction: column;
 		transition: 0.4s;
+	}
+
+	&__menu-header {
+		display: none;
 	}
 
 	&__menu-items {
@@ -426,6 +432,83 @@
 						background: $blue-icon;
 					}
 				}
+			}
+		}
+	}
+}
+
+@media (max-width: 465px) {
+	.personal {
+		&-header {
+			justify-content: flex-end;
+			&__logo {
+				margin-right: 22%;
+			}
+			&__name-text {
+				display: none;
+			}
+		}
+
+		&__menu {
+			max-width: 100%;
+			&-items {
+				margin-top: 5px;
+			}
+			&-item {
+				max-width: 100%;
+				&:hover {
+					background: $gray-bg;
+					border-left: 2px solid $blue-icon;
+				}
+			}
+
+			&.active {
+				position: absolute;
+				top: -90px;
+				z-index: 10;
+				& .personal__menu-header {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					width: 100%;
+					height: 90px;
+					background: linear-gradient(154.84deg, #4ba5bb 9.08%, #302e9f 93.38%);
+					&-close {
+						cursor: pointer;
+						margin-right: 20px;
+					}
+				}
+			}
+		}
+
+		&__menu-burger {
+			top: -65px;
+			&.menu-burger {
+				display: block;
+				z-index: 3;
+				& span {
+					background: #fff;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 365px) {
+	.personal {
+		&-header {
+			&__logo {
+				margin-right: 15%;
+			}
+		}
+	}
+}
+
+@media (max-width: 325px) {
+	.personal {
+		&-header {
+			&__logo {
+				margin-right: 13%;
 			}
 		}
 	}

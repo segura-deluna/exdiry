@@ -4,6 +4,10 @@
 	justify-content: space-between;
 	align-items: center;
 
+	&__item {
+		display: flex;
+	}
+
 	&__text {
 		position: relative;
 		font-family: "Lato-B", sans-serif;
@@ -32,4 +36,11 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+@media (max-width: 465px) {
+	.logo {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
 }

@@ -17,8 +17,10 @@
 			<a href="index.html">
 				<div class="logo">
 					<img class="logo__img" src="img/logo.png" alt="logo">
-					<div class="logo__text">EXDIRY</div>
-					<div class="io">io</div>
+					<div class="logo__item">
+						<div class="logo__text">EXDIRY</div>
+						<div class="io">io</div>
+					</div>
 				</div>
 			</a>
 		</div>
@@ -30,15 +32,17 @@
 			</div>
 			<div class="personal-header__name-text">
 				<div class="name-text">Здравствуйте, <span>Имя</span></div>
-				<ul class="name-menu">
-					<li class="name-menu__link">
-						<a href="setting.html" class="action-link1"><img src="img/gear.svg" alt="gear">Настройки</a>
-					</li>
-					<li class="name-menu__link">
-						<a href="inputroom.html" class="action-link2"><img src="img/door.svg" alt="door">Выход</a>
-					</li>
-				</ul>
 			</div>
+			<!-- name-menu -->
+			<ul class="name-menu">
+				<li class="name-menu__link">
+					<a href="setting.html" class="action-link1"><img src="img/gear.svg" alt="gear">Настройки</a>
+				</li>
+				<li class="name-menu__link">
+					<a href="inputroom.html" class="action-link2"><img src="img/door.svg" alt="door">Выход</a>
+				</li>
+			</ul>
+			<!-- /.name-menu -->
 		</div>
 		<!-- /.personal-header__name -->
 	</header>
@@ -53,8 +57,27 @@
 		<!-- /.personal__menu-burger -->
 
 		<div class="personal__menu">
+			<div class="personal__menu-header">
+				<div class="personal-header__logo">
+					<a href="index.html">
+						<div class="logo">
+							<img class="logo__img" src="img/logo.png" alt="logo">
+							<div class="logo__item">
+								<div class="logo__text">EXDIRY</div>
+								<div class="io">io</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<!-- /.personal-header__logo -->
+				<div class="personal__menu-header-close">
+					<img src="img/close-room.svg" alt="close">
+				</div>
+				<!-- /.personal__menu-header-close -->
+			</div>
+			<!-- /.personal__menu-header -->
 			<ul class="personal__menu-items">
-				<li class="personal__menu-item active">
+				<li class="personal__menu-item ">
 					<svg>
 						<use xlink:href="img/sprite.svg#wallet"></use>
 					</svg>
