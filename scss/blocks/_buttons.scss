@@ -244,6 +244,50 @@
 	font-size: 12px;
 }
 
+.personal-main__wallet-depo-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	max-width: 420px;
+	height: 50px;
+	border-radius: 50px;
+	border: transparent;
+	font-size: 18px;
+	color: #fff;
+	background: linear-gradient(180.06deg, #d03ba6 0.47%, #831fb1 99.53%);
+	cursor: pointer;
+
+	& svg {
+		width: 29px;
+		height: 29px;
+		fill: #fff;
+		margin-right: 10px;
+	}
+}
+
+.personal-main__wallet-pay-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	max-width: 260px;
+	height: 50px;
+	background: linear-gradient(180deg, #dac933 0%, #d31414 100%);
+	border-radius: 50px;
+	border: transparent;
+	font-size: 18px;
+	color: #fff;
+	cursor: pointer;
+
+	& svg {
+		width: 20px;
+		height: 20px;
+		fill: #ffffff;
+		margin-right: 10px;
+	}
+}
+
 .btn-go {
 	width: 105px;
 	height: 25px;
@@ -458,6 +502,13 @@
 	}
 }
 
+@media (max-width: 755px) {
+	.personal-main__wallet-depo-btn,
+	.personal-main__wallet-pay-btn {
+		font-size: 16px;
+	}
+}
+
 @media (max-width: 640px) {
 	.button-work,
 	.button-calc {
@@ -513,6 +564,11 @@
 	.recovery-form__btn {
 		width: 210px;
 		height: 35px;
+		font-size: 14px;
+	}
+
+	.personal-main__wallet-depo-btn,
+	.personal-main__wallet-pay-btn {
 		font-size: 14px;
 	}
 }

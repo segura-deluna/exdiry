@@ -190,9 +190,14 @@
 		}
 
 		&__desk-row {
+			width: 100%;
 			display: flex;
 			justify-content: space-between;
 			margin-bottom: 15px;
+			&-item {
+				width: 100%;
+				display: flex;
+			}
 		}
 
 		&__desk-card {
@@ -203,7 +208,7 @@
 			box-shadow: 0px 0px 10px rgba(124, 124, 206, 0.27);
 			border-radius: 10px;
 			margin: 0 5px;
-			padding: 10px 0 5px 15px;
+			padding: 10px 5px 5px 15px;
 
 			& img {
 				display: block;
@@ -238,7 +243,8 @@
 
 			& p {
 				position: relative;
-				width: 220px;
+				width: 100%;
+				max-width: 220px;
 				font-size: 12px;
 				line-height: 14px;
 				color: $blue-text;
@@ -306,7 +312,8 @@
 				}
 
 				&-type {
-					width: 320px;
+					width: 100%;
+					max-width: 320px;
 					height: 60px;
 					border-radius: 10px;
 					background: $gray-bg-menu;
@@ -323,28 +330,6 @@
 					&::placeholder {
 						font-size: 18px;
 						color: $dark;
-					}
-				}
-
-				&-btn {
-					display: flex;
-					justify-content: center;
-					align-items: center;
-					width: 100%;
-					max-width: 420px;
-					height: 50px;
-					border-radius: 50px;
-					border: transparent;
-					font-size: 18px;
-					color: #fff;
-					background: linear-gradient(180.06deg, #d03ba6 0.47%, #831fb1 99.53%);
-					cursor: pointer;
-
-					& svg {
-						width: 29px;
-						height: 29px;
-						fill: #fff;
-						margin-right: 10px;
 					}
 				}
 			}
@@ -384,33 +369,19 @@
 					bottom: -10px;
 				}
 			}
-
-			&-btn {
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				width: 100%;
-				max-width: 260px;
-				height: 50px;
-				background: linear-gradient(180deg, #dac933 0%, #d31414 100%);
-				border-radius: 50px;
-				border: transparent;
-				font-size: 18px;
-				color: #fff;
-				cursor: pointer;
-
-				& svg {
-					width: 20px;
-					height: 20px;
-					fill: #ffffff;
-					margin-right: 10px;
-				}
-			}
 		}
 	}
 }
 
 // * MEDIA =============================================
+
+@media (max-width: 1347px) {
+	.personal-main__wallet::before,
+	.personal-main__wallet::after {
+		display: none;
+	}
+}
+
 @media (max-width: 1275px) {
 	.personal {
 		&__menu {
@@ -432,6 +403,73 @@
 						background: $blue-icon;
 					}
 				}
+			}
+		}
+	}
+}
+
+@media (max-width: 950px) {
+	.personal-main {
+		&__desk {
+			&-title {
+				text-align: center;
+			}
+			&-row {
+				flex-wrap: wrap;
+				&-item {
+					width: 100%;
+					justify-content: space-around;
+				}
+			}
+			&-card {
+				margin: 0 auto 20px;
+			}
+		}
+	}
+}
+
+@media (max-width: 865px) {
+	.personal-main {
+		&__card {
+			&-title {
+				font-size: 16px;
+			}
+		}
+	}
+}
+
+@media (max-width: 800px) {
+	.personal-main {
+		&__row {
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
+		&__card {
+			max-width: 300px;
+			margin: 0 0 20px;
+			&-title {
+				font-size: 16px;
+			}
+		}
+		&__desk-card {
+			margin: 0 10px 20px;
+		}
+	}
+}
+
+@media (max-width: 745px) {
+	.personal-main {
+		&__desk {
+			&-row-item {
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+		}
+		&__wallet {
+			flex-wrap: wrap;
+			justify-content: center;
+			&-depo {
+				margin: 0 0 20px;
 			}
 		}
 	}
@@ -491,6 +529,21 @@
 				}
 			}
 		}
+
+		&-main {
+			&__wallet {
+				&-depo {
+					min-height: 250px;
+					&-title {
+						font-size: 16px;
+						margin-bottom: 10px;
+					}
+					& span {
+						font-size: 13px;
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -499,6 +552,32 @@
 		&-header {
 			&__logo {
 				margin-right: 15%;
+			}
+		}
+		&-main {
+			&__wallet {
+				&-pay {
+					padding: 15px 25px 30px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 345px) {
+	.personal {
+		&-main {
+			&__desk {
+				&-card {
+					padding: 10px;
+				}
+			}
+			&__wallet {
+				&-depo {
+					& span {
+						font-size: 10px;
+					}
+				}
 			}
 		}
 	}

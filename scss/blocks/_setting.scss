@@ -19,7 +19,7 @@
 	background: #ffffff;
 	box-shadow: 0px 0px 10px rgba(124, 124, 206, 0.27);
 	border-radius: 10px;
-	padding: 35px 5px 0;
+	padding: 30px 5px 5px;
 	margin: 0 5px 0 10px;
 
 	&__person {
@@ -291,6 +291,18 @@
 		&-room__pay,
 		&-room__pass {
 			padding: 15px 15px 25px;
+		}
+	}
+}
+
+@media (max-width: 485px) {
+	.setting {
+		&-room {
+			&__title {
+				& h1 {
+					font-size: 24px;
+				}
+			}
 		}
 	}
 }

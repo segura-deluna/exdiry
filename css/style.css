@@ -800,6 +800,73 @@ a {
   font-size: 12px;
 }
 
+.personal-main__wallet-depo-btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 420px;
+  height: 50px;
+  border-radius: 50px;
+  border: transparent;
+  font-size: 18px;
+  color: #fff;
+  background: -webkit-linear-gradient(269.94deg, #d03ba6 0.47%, #831fb1 99.53%);
+  background: -o-linear-gradient(269.94deg, #d03ba6 0.47%, #831fb1 99.53%);
+  background: linear-gradient(180.06deg, #d03ba6 0.47%, #831fb1 99.53%);
+  cursor: pointer;
+}
+
+.personal-main__wallet-depo-btn svg {
+  width: 29px;
+  height: 29px;
+  fill: #fff;
+  margin-right: 10px;
+}
+
+.personal-main__wallet-pay-btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 260px;
+  height: 50px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#dac933), to(#d31414));
+  background: -webkit-linear-gradient(top, #dac933 0%, #d31414 100%);
+  background: -o-linear-gradient(top, #dac933 0%, #d31414 100%);
+  background: linear-gradient(180deg, #dac933 0%, #d31414 100%);
+  border-radius: 50px;
+  border: transparent;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.personal-main__wallet-pay-btn svg {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+  margin-right: 10px;
+}
+
 .btn-go {
   width: 105px;
   height: 25px;
@@ -1112,6 +1179,13 @@ a {
   }
 }
 
+@media (max-width: 755px) {
+  .personal-main__wallet-depo-btn,
+  .personal-main__wallet-pay-btn {
+    font-size: 16px;
+  }
+}
+
 @media (max-width: 640px) {
   .button-work,
   .button-calc {
@@ -1162,6 +1236,10 @@ a {
   .recovery-form__btn {
     width: 210px;
     height: 35px;
+    font-size: 14px;
+  }
+  .personal-main__wallet-depo-btn,
+  .personal-main__wallet-pay-btn {
     font-size: 14px;
   }
 }
@@ -4562,6 +4640,7 @@ a {
 }
 
 .personal-main__desk-row {
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4573,6 +4652,14 @@ a {
   margin-bottom: 15px;
 }
 
+.personal-main__desk-row-item {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .personal-main__desk-card {
   width: 100%;
   max-width: 300px;
@@ -4582,7 +4669,7 @@ a {
           box-shadow: 0px 0px 10px rgba(124, 124, 206, 0.27);
   border-radius: 10px;
   margin: 0 5px;
-  padding: 10px 0 5px 15px;
+  padding: 10px 5px 5px 15px;
 }
 
 .personal-main__desk-card img {
@@ -4619,7 +4706,8 @@ a {
 
 .personal-main__desk-card-list p {
   position: relative;
-  width: 220px;
+  width: 100%;
+  max-width: 220px;
   font-size: 12px;
   line-height: 14px;
   color: #959fff;
@@ -4711,7 +4799,8 @@ a {
 }
 
 .personal-main__wallet-depo-type {
-  width: 320px;
+  width: 100%;
+  max-width: 320px;
   height: 60px;
   border-radius: 10px;
   background: rgba(196, 196, 196, 0.24);
@@ -4745,39 +4834,6 @@ a {
 .personal-main__wallet-depo-input::placeholder {
   font-size: 18px;
   color: #383838;
-}
-
-.personal-main__wallet-depo-btn {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  max-width: 420px;
-  height: 50px;
-  border-radius: 50px;
-  border: transparent;
-  font-size: 18px;
-  color: #fff;
-  background: -webkit-linear-gradient(269.94deg, #d03ba6 0.47%, #831fb1 99.53%);
-  background: -o-linear-gradient(269.94deg, #d03ba6 0.47%, #831fb1 99.53%);
-  background: linear-gradient(180.06deg, #d03ba6 0.47%, #831fb1 99.53%);
-  cursor: pointer;
-}
-
-.personal-main__wallet-depo-btn svg {
-  width: 29px;
-  height: 29px;
-  fill: #fff;
-  margin-right: 10px;
 }
 
 .personal-main__wallet-pay {
@@ -4831,38 +4887,11 @@ a {
   bottom: -10px;
 }
 
-.personal-main__wallet-pay-btn {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  max-width: 260px;
-  height: 50px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#dac933), to(#d31414));
-  background: -webkit-linear-gradient(top, #dac933 0%, #d31414 100%);
-  background: -o-linear-gradient(top, #dac933 0%, #d31414 100%);
-  background: linear-gradient(180deg, #dac933 0%, #d31414 100%);
-  border-radius: 50px;
-  border: transparent;
-  font-size: 18px;
-  color: #fff;
-  cursor: pointer;
-}
-
-.personal-main__wallet-pay-btn svg {
-  width: 20px;
-  height: 20px;
-  fill: #ffffff;
-  margin-right: 10px;
+@media (max-width: 1347px) {
+  .personal-main__wallet::before,
+  .personal-main__wallet::after {
+    display: none;
+  }
 }
 
 @media (max-width: 1275px) {
@@ -4890,6 +4919,77 @@ a {
   }
   .personal__menu-burger.menu-burger span {
     background: #2d4dbc;
+  }
+}
+
+@media (max-width: 950px) {
+  .personal-main__desk-title {
+    text-align: center;
+  }
+  .personal-main__desk-row {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  .personal-main__desk-row-item {
+    width: 100%;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+  }
+  .personal-main__desk-card {
+    margin: 0 auto 20px;
+  }
+}
+
+@media (max-width: 865px) {
+  .personal-main__card-title {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 800px) {
+  .personal-main__row {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+  }
+  .personal-main__card {
+    max-width: 300px;
+    margin: 0 0 20px;
+  }
+  .personal-main__card-title {
+    font-size: 16px;
+  }
+  .personal-main__desk-card {
+    margin: 0 10px 20px;
+  }
+}
+
+@media (max-width: 745px) {
+  .personal-main__desk-row-item {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .personal-main__wallet {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .personal-main__wallet-depo {
+    margin: 0 0 20px;
   }
 }
 
@@ -4957,11 +5057,33 @@ a {
   .personal__menu-burger.menu-burger span {
     background: #fff;
   }
+  .personal-main__wallet-depo {
+    min-height: 250px;
+  }
+  .personal-main__wallet-depo-title {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .personal-main__wallet-depo span {
+    font-size: 13px;
+  }
 }
 
 @media (max-width: 365px) {
   .personal-header__logo {
     margin-right: 15%;
+  }
+  .personal-main__wallet-pay {
+    padding: 15px 25px 30px;
+  }
+}
+
+@media (max-width: 345px) {
+  .personal-main__desk-card {
+    padding: 10px;
+  }
+  .personal-main__wallet-depo span {
+    font-size: 10px;
   }
 }
 
@@ -5897,7 +6019,7 @@ a {
   -webkit-box-shadow: 0px 0px 10px rgba(124, 124, 206, 0.27);
           box-shadow: 0px 0px 10px rgba(124, 124, 206, 0.27);
   border-radius: 10px;
-  padding: 35px 5px 0;
+  padding: 30px 5px 5px;
   margin: 0 5px 0 10px;
 }
 
@@ -6197,10 +6319,16 @@ a {
   }
 }
 
+@media (max-width: 485px) {
+  .setting-room__title h1 {
+    font-size: 24px;
+  }
+}
+
 .output {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 15;
   left: 0;
   top: 0;
   width: 100%;
@@ -6213,7 +6341,6 @@ a {
   position: relative;
   width: 100%;
   max-width: 1260px;
-  height: 830px;
   padding: 15px 40px 30px;
   margin: auto;
   background-color: #ffffff;
@@ -6252,6 +6379,10 @@ a {
   cursor: pointer;
 }
 
+.output__pay-title {
+  text-align: center;
+}
+
 .output__pay-title h2 {
   width: 245px;
   font-size: 28px;
@@ -6261,8 +6392,7 @@ a {
 
 .output__pay-desk {
   width: 100%;
-  width: 1060px;
-  height: 340px;
+  max-width: 1060px;
   padding: 50px 60px;
   -webkit-box-shadow: 0px 0px 10px rgba(124, 124, 206, 0.27);
           box-shadow: 0px 0px 10px rgba(124, 124, 206, 0.27);
@@ -6398,7 +6528,6 @@ a {
 
 .output__pay-input-sum {
   width: 310px;
-  height: 80px;
   padding: 15px 25px;
   border-radius: 10px;
   background-color: #c5c5c5;
@@ -6451,6 +6580,14 @@ a {
   max-width: 570px;
 }
 
+.output__depo {
+  width: 100%;
+}
+
+.output__depo-title {
+  text-align: center;
+}
+
 .output__depo-title h2 {
   width: 700px;
   font-size: 28px;
@@ -6460,9 +6597,9 @@ a {
 
 .output__depo-desk {
   width: 100%;
-  width: 1160px;
-  height: 330px;
-  padding: 20px 60px;
+  max-width: 1160px;
+  padding: 20px 60px 30px;
+  margin: 0 auto;
   -webkit-box-shadow: 0px 0px 10px rgba(124, 124, 206, 0.27);
           box-shadow: 0px 0px 10px rgba(124, 124, 206, 0.27);
   border-radius: 10px;
@@ -6475,6 +6612,7 @@ a {
 }
 
 .output__depo-block {
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6489,10 +6627,21 @@ a {
           align-items: center;
 }
 
+.output__depo-item {
+  width: 100%;
+}
+
+.output__depo-item:nth-child(1) {
+  max-width: 340px;
+}
+
+.output__depo-item:nth-child(2) {
+  max-width: 600px;
+}
+
 .output__depo-cards {
   width: 100%;
   max-width: 340px;
-  height: 220px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6508,11 +6657,10 @@ a {
 
 .output__depo-card {
   width: 160px;
-  height: 100px;
   border-radius: 10px;
   background: #bac1f9;
   margin-bottom: 20px;
-  padding: 5px 40px;
+  padding: 15px 40px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6530,6 +6678,7 @@ a {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 .output__depo-card img {
@@ -6595,6 +6744,37 @@ a {
   }
   to {
     opacity: 1;
+  }
+}
+
+@media (max-width: 1367px) {
+  .output__content {
+    padding: 15px 30px;
+  }
+  .output__pay-title h2 {
+    font-size: 24px;
+  }
+  .output__pay-desk {
+    padding: 30px 50px 20px;
+    margin-bottom: 10px;
+  }
+  .output__depo-title h2 {
+    font-size: 24px;
+  }
+  .output__depo-desk {
+    padding: 20px 50px 10px;
+  }
+  .output__depo-card {
+    padding: 10px 35px;
+  }
+  .output__depo-card p {
+    font-size: 12px;
+  }
+  .output__depo-item:nth-child(2) {
+    margin-left: 20px;
+  }
+  .output__depo-button p {
+    text-align: center;
   }
 }
 

@@ -1,7 +1,7 @@
 .output {
 	display: none;
 	position: fixed;
-	z-index: 1;
+	z-index: 15;
 	left: 0;
 	top: 0;
 	width: 100%;
@@ -13,7 +13,6 @@
 		position: relative;
 		width: 100%;
 		max-width: 1260px;
-		height: 830px;
 		padding: 15px 40px 30px;
 		margin: auto;
 		background-color: #ffffff;
@@ -39,6 +38,7 @@
 	// * Output ====================================
 
 	&__pay-title {
+		text-align: center;
 		& h2 {
 			width: 245px;
 			font-size: 28px;
@@ -49,8 +49,7 @@
 
 	&__pay-desk {
 		width: 100%;
-		width: 1060px;
-		height: 340px;
+		max-width: 1060px;
 		padding: 50px 60px;
 		box-shadow: 0px 0px 10px rgba(124, 124, 206, 0.27);
 		border-radius: 10px;
@@ -157,7 +156,6 @@
 
 	&__pay-input-sum {
 		width: 310px;
-		height: 80px;
 		padding: 15px 25px;
 		border-radius: 10px;
 		background-color: $gray-light;
@@ -193,7 +191,12 @@
 	}
 
 	// * Deposit ====================================
+	&__depo {
+		width: 100%;
+	}
+
 	&__depo-title {
+		text-align: center;
 		& h2 {
 			width: 700px;
 			font-size: 28px;
@@ -204,9 +207,9 @@
 
 	&__depo-desk {
 		width: 100%;
-		width: 1160px;
-		height: 330px;
-		padding: 20px 60px;
+		max-width: 1160px;
+		padding: 20px 60px 30px;
+		margin: 0 auto;
 		box-shadow: 0px 0px 10px rgba(124, 124, 206, 0.27);
 		border-radius: 10px;
 		& h4 {
@@ -217,15 +220,26 @@
 	}
 
 	&__depo-block {
+		width: 100%;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 	}
 
+	&__depo-item {
+		width: 100%;
+		&:nth-child(1) {
+			max-width: 340px;
+		}
+		&:nth-child(2) {
+			max-width: 600px;
+		}
+	}
+
 	&__depo-cards {
 		width: 100%;
 		max-width: 340px;
-		height: 220px;
+		// height: 220px;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
@@ -233,15 +247,15 @@
 
 	&__depo-card {
 		width: 160px;
-		height: 100px;
 		border-radius: 10px;
 		background: $blue-card;
 		margin-bottom: 20px;
-		padding: 5px 40px;
+		padding: 15px 40px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		cursor: pointer;
 		& img {
 			margin-bottom: 5px;
 		}
@@ -291,5 +305,52 @@
 	}
 	to {
 		opacity: 1;
+	}
+}
+
+// * MEDIA ==================================================
+
+@media (max-width: 1367px) {
+	.output {
+		&__content {
+			padding: 15px 30px;
+		}
+		&__pay {
+			&-title {
+				& h2 {
+					font-size: 24px;
+				}
+			}
+			&-desk {
+				padding: 30px 50px 20px;
+				margin-bottom: 10px;
+			}
+		}
+		&__depo {
+			&-title {
+				& h2 {
+					font-size: 24px;
+				}
+			}
+			&-desk {
+				padding: 20px 50px 10px;
+			}
+
+			&-card {
+				padding: 10px 35px;
+				& p {
+					font-size: 12px;
+				}
+			}
+
+			&-item:nth-child(2) {
+				margin-left: 20px;
+			}
+			&-button {
+				& p {
+					text-align: center;
+				}
+			}
+		}
 	}
 }
