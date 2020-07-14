@@ -407,6 +407,28 @@
 	}
 }
 
+.output__pay-go-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	max-width: 570px;
+	height: 50px;
+	background: linear-gradient(180deg, #dac933 0%, #d31414 100%);
+	border-radius: 50px;
+	border: transparent;
+	font-size: 18px;
+	color: #fff;
+	cursor: pointer;
+
+	& svg {
+		width: 20px;
+		height: 20px;
+		fill: #ffffff;
+		margin-right: 10px;
+	}
+}
+
 .output__depo-request-btn {
 	width: 100%;
 	max-width: 540px;
@@ -530,6 +552,11 @@
 		width: 370px;
 		height: 45px;
 		font-size: 16px;
+	}
+
+	.output__pay-go-btn,
+	.output__depo-request-btn {
+		font-size: 14px;
 	}
 }
 

@@ -1079,6 +1079,40 @@ a {
           box-shadow: 0px 0px 10px rgba(146, 146, 146, 0.75);
 }
 
+.output__pay-go-btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 570px;
+  height: 50px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#dac933), to(#d31414));
+  background: -webkit-linear-gradient(top, #dac933 0%, #d31414 100%);
+  background: -o-linear-gradient(top, #dac933 0%, #d31414 100%);
+  background: linear-gradient(180deg, #dac933 0%, #d31414 100%);
+  border-radius: 50px;
+  border: transparent;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.output__pay-go-btn svg {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+  margin-right: 10px;
+}
+
 .output__depo-request-btn {
   width: 100%;
   max-width: 540px;
@@ -1206,6 +1240,10 @@ a {
     width: 370px;
     height: 45px;
     font-size: 16px;
+  }
+  .output__pay-go-btn,
+  .output__depo-request-btn {
+    font-size: 14px;
   }
 }
 
@@ -6375,7 +6413,7 @@ a {
 .output__close {
   position: absolute;
   top: 20px;
-  right: 40px;
+  right: 30px;
   cursor: pointer;
 }
 
@@ -6444,6 +6482,10 @@ a {
   font-size: 18px;
   color: #929292;
   margin-bottom: 10px;
+}
+
+.output__pay-system-spoiler {
+  display: none;
 }
 
 .output__pay-system-block {
@@ -6527,7 +6569,8 @@ a {
 }
 
 .output__pay-input-sum {
-  width: 310px;
+  width: 100%;
+  max-width: 310px;
   padding: 15px 25px;
   border-radius: 10px;
   background-color: #c5c5c5;
@@ -6575,11 +6618,6 @@ a {
   color: rgba(146, 146, 146, 0.6);
 }
 
-.output__pay-go-btn {
-  width: 100%;
-  max-width: 570px;
-}
-
 .output__depo {
   width: 100%;
 }
@@ -6589,7 +6627,8 @@ a {
 }
 
 .output__depo-title h2 {
-  width: 700px;
+  width: 100%;
+  max-width: 700px;
   font-size: 28px;
   color: #929292;
   margin: 0 auto 15px;
@@ -6748,6 +6787,9 @@ a {
 }
 
 @media (max-width: 1367px) {
+  .output {
+    padding: 20px;
+  }
   .output__content {
     padding: 15px 30px;
   }
@@ -6775,6 +6817,142 @@ a {
   }
   .output__depo-button p {
     text-align: center;
+  }
+}
+
+@media (max-width: 1017px) {
+  .output {
+    position: absolute;
+    padding: 0;
+  }
+  .output__content {
+    width: 100%;
+  }
+  .output__pay {
+    width: 100%;
+  }
+  .output__pay-row {
+    width: 100%;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .output__pay-ballans {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .output__pay-system {
+    width: 100%;
+    margin: 0 auto 20px;
+  }
+  .output__pay-system::before {
+    display: none;
+  }
+  .output__pay-system h3 {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 10px;
+  }
+  .output__pay-system-block {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .output__pay-go {
+    width: 100%;
+    padding: 15px 0 0;
+  }
+  .output__pay-go-btn {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .output__depo-desk {
+    text-align: center;
+  }
+  .output__depo-desk h4 {
+    margin: 0 auto 15px;
+  }
+  .output__depo-block {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .output__depo-descr {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 665px) {
+  .output__pay-system {
+    padding-left: 0;
+  }
+  .output__pay-system-block {
+    display: none;
+  }
+  .output__pay-system-spoiler {
+    display: block;
+    cursor: pointer;
+  }
+  .output__pay-go p {
+    font-size: 12px;
+  }
+  .output__depo-card {
+    width: 100%;
+    max-width: 150px;
+    padding: 10px 30px;
+  }
+  .output__depo-descr {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  .output__depo-item:nth-child(2) {
+    margin-left: 0;
+  }
+  .output__depo-calendar, .output__depo-percent {
+    width: 100%;
+    margin: 0 auto 15px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .output__depo-button p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .output__content {
+    padding: 15px 10px;
+  }
+  .output__depo-title h2, .output__pay-title h2 {
+    font-size: 20px;
+  }
+  .output__pay-desk, .output__depo-desk {
+    padding: 20px 10px 10px;
+  }
+  .output__pay-system h3 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 348px) {
+  .output__depo-card {
+    max-width: 135px;
+    padding: 10px 15px;
   }
 }
 

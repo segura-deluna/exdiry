@@ -31,7 +31,7 @@
 	&__close {
 		position: absolute;
 		top: 20px;
-		right: 40px;
+		right: 30px;
 		cursor: pointer;
 	}
 
@@ -95,6 +95,9 @@
 			margin-bottom: 10px;
 		}
 	}
+	&__pay-system-spoiler {
+		display: none;
+	}
 
 	&__pay-system-block {
 		display: flex;
@@ -155,7 +158,8 @@
 	}
 
 	&__pay-input-sum {
-		width: 310px;
+		width: 100%;
+		max-width: 310px;
 		padding: 15px 25px;
 		border-radius: 10px;
 		background-color: $gray-light;
@@ -185,11 +189,6 @@
 		}
 	}
 
-	&__pay-go-btn {
-		width: 100%;
-		max-width: 570px;
-	}
-
 	// * Deposit ====================================
 	&__depo {
 		width: 100%;
@@ -198,7 +197,8 @@
 	&__depo-title {
 		text-align: center;
 		& h2 {
-			width: 700px;
+			width: 100%;
+			max-width: 700px;
 			font-size: 28px;
 			color: $gray-text;
 			margin: 0 auto 15px;
@@ -239,7 +239,6 @@
 	&__depo-cards {
 		width: 100%;
 		max-width: 340px;
-		// height: 220px;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
@@ -312,6 +311,7 @@
 
 @media (max-width: 1367px) {
 	.output {
+		padding: 20px;
 		&__content {
 			padding: 15px 30px;
 		}
@@ -351,6 +351,146 @@
 					text-align: center;
 				}
 			}
+		}
+	}
+}
+
+@media (max-width: 1017px) {
+	.output {
+		position: absolute;
+		padding: 0;
+		&__content {
+			width: 100%;
+		}
+		&__pay {
+			width: 100%;
+			&-row {
+				width: 100%;
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+			&-ballans {
+				text-align: center;
+				margin-bottom: 15px;
+			}
+			&-system {
+				width: 100%;
+				margin: 0 auto 20px;
+				&::before {
+					display: none;
+				}
+				& h3 {
+					width: 100%;
+					text-align: center;
+					margin: 0 auto 10px;
+				}
+				&-block {
+					justify-content: center;
+				}
+			}
+			&-go {
+				width: 100%;
+				padding: 15px 0 0;
+			}
+			&-go-btn {
+				width: 100%;
+				margin: 0 auto;
+			}
+		}
+
+		&__depo {
+			&-desk {
+				text-align: center;
+				& h4 {
+					margin: 0 auto 15px;
+				}
+			}
+			&-block {
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+			&-descr {
+				justify-content: center;
+			}
+		}
+	}
+}
+
+@media (max-width: 665px) {
+	.output {
+		&__pay {
+			&-system {
+				padding-left: 0;
+				&-block {
+					display: none;
+				}
+				&-spoiler {
+					display: block;
+					cursor: pointer;
+				}
+			}
+			&-go {
+				& p {
+					font-size: 12px;
+				}
+			}
+		}
+
+		&__depo {
+			&-card {
+				width: 100%;
+				max-width: 150px;
+				padding: 10px 30px;
+			}
+			&-descr {
+				flex-wrap: wrap;
+			}
+			&-item:nth-child(2) {
+				margin-left: 0;
+			}
+			&-calendar,
+			&-percent {
+				width: 100%;
+				margin: 0 auto 15px;
+				justify-content: center;
+			}
+			&-button {
+				& p {
+					font-size: 12px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.output {
+		&__content {
+			padding: 15px 10px;
+		}
+		&__depo-title,
+		&__pay-title {
+			& h2 {
+				font-size: 20px;
+			}
+		}
+		&__pay-desk,
+		&__depo-desk {
+			padding: 20px 10px 10px;
+		}
+		&__pay-system {
+			& h3 {
+				font-size: 16px;
+			}
+		}
+	}
+}
+
+@media (max-width: 348px) {
+	.output {
+		&__depo-card {
+			max-width: 135px;
+			padding: 10px 15px;
 		}
 	}
 }
