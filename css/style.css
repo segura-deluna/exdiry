@@ -5119,6 +5119,7 @@ a {
 @media (max-width: 345px) {
   .personal-main__desk-card {
     padding: 10px;
+    margin: 0 auto 20px;
   }
   .personal-main__wallet-depo span {
     font-size: 10px;
@@ -6789,6 +6790,8 @@ a {
 @media (max-width: 1367px) {
   .output {
     padding: 20px;
+    height: 100vh;
+    overflow: scroll;
   }
   .output__content {
     padding: 15px 30px;
@@ -6822,7 +6825,6 @@ a {
 
 @media (max-width: 1017px) {
   .output {
-    position: absolute;
     padding: 0;
   }
   .output__content {
@@ -6903,7 +6905,64 @@ a {
   }
   .output__pay-system-spoiler {
     display: block;
+    position: relative;
+    width: 100%;
+    max-width: 250px;
     cursor: pointer;
+    margin: 0 auto;
+  }
+  .output__pay-system-spoiler[open] .output__pay-system-head::after {
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  .output__pay-system-head {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 100%;
+    height: 35px;
+    background: -webkit-linear-gradient(291.71deg, #d9a42d 16.71%, #d43019 83.63%);
+    background: -o-linear-gradient(291.71deg, #d9a42d 16.71%, #d43019 83.63%);
+    background: linear-gradient(158.29deg, #d9a42d 16.71%, #d43019 83.63%);
+    color: #ffffff;
+    font-size: 16px;
+    padding-left: 30px;
+  }
+  .output__pay-system-head::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 12px;
+    background: url(../img/spoiler-arrow.svg);
+    top: 12px;
+    right: 15px;
+    -webkit-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+    transition: 0.3s linear;
+  }
+  .output__pay-system-list {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background: #ffffff;
+    padding: 20px 40px;
+    -webkit-box-shadow: 0px 0px 10px rgba(124, 124, 206, 0.27);
+            box-shadow: 0px 0px 10px rgba(124, 124, 206, 0.27);
+    border-radius: 0px 0px 10px 10px;
   }
   .output__pay-go p {
     font-size: 12px;
