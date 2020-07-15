@@ -5220,6 +5220,10 @@ a {
   border-left: 1px solid rgba(146, 146, 146, 0.6);
 }
 
+.history-desk__personal-list {
+  display: none;
+}
+
 .history-desk__personal-event {
   display: -webkit-box;
   display: -webkit-flex;
