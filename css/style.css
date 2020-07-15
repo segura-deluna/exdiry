@@ -5133,22 +5133,22 @@ a {
 }
 
 .history {
-  padding: 80px 10px 0px 10px;
+  padding: 80px 10px 0px;
 }
 
 .history-desk {
   width: 100%;
   max-width: 1220px;
-  min-height: 490px;
   background: #ffffff;
   -webkit-box-shadow: 0px 0px 10px rgba(124, 124, 206, 0.27);
           box-shadow: 0px 0px 10px rgba(124, 124, 206, 0.27);
   border-radius: 10px;
   margin: 0 auto;
-  padding: 40px 0px;
+  padding: 40px 5px;
 }
 
 .history-desk__title h2 {
+  width: 100%;
   font-size: 30px;
   font-weight: 500;
   text-align: center;
@@ -5160,10 +5160,26 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   max-width: 1050px;
   margin: 0 auto 45px;
   border-bottom: 1px solid rgba(146, 146, 146, 0.6);
+}
+
+.history-desk__depo-list {
+  display: none;
+}
+
+.history-desk__depo-item {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .history-desk__depo-suptitle {
@@ -5182,40 +5198,15 @@ a {
 
 .history-desk__depo-tab {
   text-align: center;
-}
-
-.history-desk__depo-tab.depo-tab1 {
   width: 100%;
-  max-width: 163px;
 }
 
 .history-desk__depo-tab.depo-tab1 .history-desk__depo-suptitle {
   border-left: none;
 }
 
-.history-desk__depo-tab.depo-tab2 {
-  width: 100%;
-  max-width: 143px;
-}
-
-.history-desk__depo-tab.depo-tab3 {
-  width: 100%;
-  max-width: 175px;
-}
-
 .history-desk__depo-tab.depo-tab4 {
-  width: 100%;
-  max-width: 194px;
-}
-
-.history-desk__depo-tab.depo-tab5 {
-  width: 100%;
-  max-width: 186px;
-}
-
-.history-desk__depo-tab.depo-tab6 {
-  width: 100%;
-  max-width: 193px;
+  min-width: 185px;
 }
 
 .history-desk__depo-tab.depo-tab6 .history-desk__depo-text {
@@ -5242,10 +5233,10 @@ a {
 
 .history-desk__personal-tab {
   text-align: center;
+  width: 100%;
 }
 
 .history-desk__personal-tab.personal-tab1 {
-  width: 100%;
   max-width: 163px;
 }
 
@@ -5254,12 +5245,10 @@ a {
 }
 
 .history-desk__personal-tab.personal-tab2 {
-  width: 100%;
   max-width: 210px;
 }
 
 .history-desk__personal-tab.personal-tab3 {
-  width: 100%;
   max-width: 175px;
 }
 
@@ -5286,6 +5275,82 @@ a {
   font-weight: 500;
   padding: 9px 20px;
   border-left: 1px solid rgba(146, 146, 146, 0.6);
+}
+
+@media (max-width: 960px) {
+  .history-desk__depo {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    border-bottom: none;
+  }
+  .history-desk__depo-item {
+    max-width: 550px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(146, 146, 146, 0.6);
+  }
+  .history-desk__depo-tab.depo-tab3 .history-desk__depo-text {
+    border-right: 1px solid rgba(146, 146, 146, 0.6);
+  }
+  .history-desk__depo-tab.depo-tab4 .history-desk__depo-suptitle {
+    border-left: 1px solid rgba(146, 146, 146, 0.6);
+  }
+}
+
+@media (max-width: 495px) {
+  .history {
+    padding: 45px 10px 0px;
+  }
+  .history-desk {
+    padding: 40px 50px;
+  }
+  .history-desk__depo, .history-desk__personal-event {
+    display: none;
+  }
+  .history-desk__depo-list, .history-desk__personal-list {
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto 20px;
+  }
+  .history-desk__depo-list-title, .history-desk__personal-list-title {
+    background: -webkit-linear-gradient(269.89deg, #d03ba6 0.47%, #831fb1 99.53%);
+    background: -o-linear-gradient(269.89deg, #d03ba6 0.47%, #831fb1 99.53%);
+    background: linear-gradient(180.11deg, #d03ba6 0.47%, #831fb1 99.53%);
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    padding: 12px 20px;
+  }
+  .history-desk__depo-list-items, .history-desk__personal-list-items {
+    border: 1px solid rgba(146, 146, 146, 0.6);
+    border-top: none;
+    padding: 15px 20px 0;
+    text-align: center;
+  }
+  .history-desk__depo-list-item, .history-desk__personal-list-item {
+    margin-bottom: 20px;
+  }
+  .history-desk__depo-list-item p, .history-desk__personal-list-item p {
+    width: 100%;
+    max-width: 120px;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #929292;
+  }
+  .history-desk__depo-list-item span, .history-desk__personal-list-item span {
+    font-size: 16px;
+    color: #383838;
+  }
+}
+
+@media (max-width: 410px) {
+  .history-desk__title h2 {
+    font-size: 20px;
+  }
+  .history-desk__depo-list-title h3, .history-desk__personal-list-title h3 {
+    font-size: 14px;
+  }
 }
 
 .program {
