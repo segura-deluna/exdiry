@@ -1205,6 +1205,12 @@ a {
   }
 }
 
+@media (max-width: 926px) {
+  .btn-copy {
+    margin: 0 auto 20px;
+  }
+}
+
 @media (max-width: 902px) {
   .news__card-btn {
     width: 155px;
@@ -5391,6 +5397,10 @@ a {
   position: relative;
 }
 
+.tabs-mob {
+  display: none;
+}
+
 .tabs-triggers {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5814,6 +5824,228 @@ a {
 
 .table-2__item-reward {
   max-width: 255px;
+}
+
+@media (max-width: 926px) {
+  .program-desk {
+    height: auto;
+  }
+  .program-desk__title h2 {
+    margin-bottom: 5px;
+  }
+  .tabs {
+    display: none;
+  }
+  .tabs-mob {
+    display: block;
+  }
+  .tabs-mob__title {
+    text-align: center;
+  }
+  .tabs-mob__title h3 {
+    font-size: 16px;
+    color: #2d4dbc;
+    margin: 0 auto 10px;
+  }
+  .tabs-mob .tabs-info__partner {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 15px;
+  }
+  .tabs-mob .tabs-info__row-bottom {
+    margin-bottom: 30px;
+  }
+  .mob-tabs__title {
+    text-align: center;
+  }
+  .mob-tabs__title h3 {
+    font-size: 16px;
+    margin: 0 auto 15px;
+  }
+  .mob-tabs__table {
+    margin-bottom: 30px;
+  }
+  .mob-tabs__table .swiper-scrollbar .swiper-scrollbar-drag {
+    background: #2d4dbc;
+  }
+  .mob-tabs__table-wrap {
+    position: relative;
+    padding-bottom: 25px;
+  }
+  .mob-tabs__table-wrap .swiper-scrollbar {
+    bottom: -10px;
+  }
+  .table-rang__row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .table-rang__row:nth-child(3) {
+    border-bottom: 1px solid rgba(146, 146, 146, 0.6);
+  }
+  .table-rang__item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .table-rang__item-head {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 30px;
+    background: -webkit-linear-gradient(306.27deg, #413eff 16.71%, #da0e88 83.63%);
+    background: -o-linear-gradient(306.27deg, #413eff 16.71%, #da0e88 83.63%);
+    background: linear-gradient(143.73deg, #413eff 16.71%, #da0e88 83.63%);
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #ffffff;
+  }
+  .table-rang__item-descr {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    padding: 20px 15px;
+    border-left: 1px solid rgba(146, 146, 146, 0.6);
+  }
+  .table-rang__item-descr .item-prog,
+  .table-rang__item-descr .item-perc,
+  .table-rang__item-descr .item-inv,
+  .table-rang__item-descr .item-level,
+  .table-rang__item-descr .item-size,
+  .table-rang__item-descr .item-prize {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 840px) {
+  .tabs-mob .tabs-info__row {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .tabs-mob .tabs-info__card {
+    margin: 0 5px 10px;
+  }
+}
+
+@media (max-width: 660px) {
+  .tabs-mob .tabs-info__partner {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .tabs-mob .tabs-info__partner-data {
+    width: 100%;
+    max-width: 240px;
+  }
+  .tabs-mob .tabs-info__partner-data .tabs-info__partner-link,
+  .tabs-mob .tabs-info__partner-data .tabs-info__partner-name {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .tabs-mob .tabs-info__partner-data .tabs-info__partner-link .partner-link,
+  .tabs-mob .tabs-info__partner-data .tabs-info__partner-link .partner-name,
+  .tabs-mob .tabs-info__partner-data .tabs-info__partner-name .partner-link,
+  .tabs-mob .tabs-info__partner-data .tabs-info__partner-name .partner-name {
+    margin: 0 0 5px;
+  }
+  .tabs-mob .tabs-info__partner-data .tabs-info__partner-link span,
+  .tabs-mob .tabs-info__partner-data .tabs-info__partner-name span {
+    display: inline-block;
+    margin-bottom: 3px;
+  }
+  .tabs-mob .tabs-info__row-bottom {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .tabs-mob .tabs-info__card-bottom {
+    margin: 0 10px 10px;
+  }
+}
+
+@media (max-width: 460px) {
+  .program-desk__title h2 {
+    font-size: 20px;
+  }
+  .tabs-mob .tabs-info__partner-avatar {
+    width: 75px;
+    height: 75px;
+    margin-right: 10px;
+  }
+  .tabs-mob .tabs-info__partner-link span,
+  .tabs-mob .tabs-info__partner-name span {
+    font-size: 14px;
+  }
+  .tabs-mob .partner-link,
+  .tabs-mob .partner-name {
+    width: 100%;
+    max-width: 240px;
+  }
+  .table-rang__item-descr .item-prog,
+  .table-rang__item-descr .item-perc,
+  .table-rang__item-descr .item-inv,
+  .table-rang__item-descr .item-level,
+  .table-rang__item-descr .item-size,
+  .table-rang__item-descr .item-prize {
+    font-size: 12px;
+  }
 }
 
 .my-partners {

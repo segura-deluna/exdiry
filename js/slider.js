@@ -43,4 +43,16 @@ const newsSwiper = new Swiper('.news__slider-container', {
 });
 
 
+// * Partner-Program Slide ======================================
 
+const tableSlider = new Swiper('.mob-tabs__table', {
+	loop: true,
+	observer: true,
+	observeParents: true,
+	centeredSlides: true,
+	speed: 600,
+	scrollbar: {
+		el: '.swiper-scrollbar',
+		draggable: true,
+	},
+});
