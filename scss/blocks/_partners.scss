@@ -20,25 +20,33 @@
 
 	&__table {
 		display: flex;
+		justify-content: center;
 		width: 100%;
 		max-width: 1113px;
 		margin: 0 auto 65px;
-		border-bottom: 1px solid $gray;
+		&-mob {
+			display: none;
+		}
+
+		&-item {
+			display: flex;
+			width: 100%;
+		}
 	}
 
 	&__tab {
 		text-align: center;
+		border-bottom: 1px solid $gray;
 
 		&.table-tab1 {
 			width: 100%;
-			max-width: 204px;
+			max-width: 214px;
 			& .my-partners-desk__suptitle {
 				border-left: none;
 			}
 		}
 		&.table-tab2 {
 			width: 100%;
-			max-width: 143px;
 		}
 		&.table-tab3 {
 			width: 100%;
@@ -46,11 +54,11 @@
 		}
 		&.table-tab4 {
 			width: 100%;
-			max-width: 194px;
+			max-width: 180px;
 		}
 		&.table-tab5 {
 			width: 100%;
-			max-width: 210px;
+			min-width: 210px;
 		}
 		&.table-tab6 {
 			width: 100%;
@@ -62,6 +70,7 @@
 	}
 
 	&__suptitle {
+		text-align: center;
 		background: linear-gradient(180.11deg, #d03ba6 0.47%, #831fb1 99.53%);
 		padding: 9px 5px;
 		border-left: 1px solid #ffffff;
@@ -70,6 +79,7 @@
 			font-size: 12px;
 			font-weight: 500;
 			color: #fff;
+			margin: 0 auto;
 		}
 	}
 
@@ -78,5 +88,77 @@
 		font-weight: 500;
 		padding: 9px 5px;
 		border-left: 1px solid $gray;
+	}
+}
+
+// * MEDIA ==================================
+@media (max-width: 1335px) {
+	.my-partners-desk {
+		&__table {
+			flex-wrap: wrap;
+			max-width: 600px;
+			margin-bottom: 40px;
+			&-item {
+				margin-bottom: 20px;
+			}
+		}
+		&__tab {
+			&.table-tab3 {
+				& .my-partners-desk__text {
+					border-right: 1px solid $gray;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 575px) {
+	.my-partners-desk {
+		padding: 40px 50px;
+		&__table {
+			display: none;
+			&-mob {
+				display: block;
+				width: 100%;
+				max-width: 400px;
+				margin: 0 auto;
+				& .my-partners-desk__suptitle h3 {
+					font-size: 16px;
+				}
+				& .mob-item {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					text-align: center;
+					border: 1px solid $gray;
+					border-top: none;
+					padding: 10px 25px 40px;
+					&__cell {
+						margin-bottom: 15px;
+						& p {
+							color: $gray-text;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 465px) {
+	.my-partners {
+		padding: 40px 10px 20px;
+		&-desk__title {
+			& h2 {
+				font-size: 25px;
+			}
+		}
+
+		& .mob-item__cell {
+			& p,
+			& span {
+				font-size: 14px;
+			}
+		}
 	}
 }
