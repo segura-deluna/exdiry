@@ -56,3 +56,18 @@ const tableSlider = new Swiper('.mob-tabs__table', {
 		draggable: true,
 	},
 });
+
+
+// * Promotional Slider =====================================
+
+const promoSlider = new Swiper('.promotional-desk__container', {
+	loop: true,
+	observer: true,
+	observeParents: true,
+	centeredSlides: true,
+	speed: 600,
+	autoplay: {
+		delay: 2500,
+		disableOnInteraction: false,
+	}
+});
